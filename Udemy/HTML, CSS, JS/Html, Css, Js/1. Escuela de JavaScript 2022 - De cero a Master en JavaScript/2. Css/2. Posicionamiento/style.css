@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.caja{
+    background-color: darkorange;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+
+    /*Hace flotar los elementos y se organizan los elementos en los lados*/
+    /**/
+    /* float:   ; */
+}
+
+.caja-padre{
+    margin: 20px;
+    background-color:red;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.posicion{
+    background-color: pink;
+
+    /*Se puede mover libremente y funciona su top, right, left y bottom, Pero deja su espacio anterior*/
+    /* position: relative; */
+
+    /*Es diferente a la posicion relativa ya que no solo su top, right, eft y bottom seran diferente, y no dejara su espacio anterior*/
+    position: absolute;
+    /* left: 300px;
+    top: 300px; */
+
+    /*Con fixed el elemento queda pegado al scroll, se seguira viendo si se baja o sube*/
+    /*Es recomendable para usos de navegacion*/
+    /* position: fixed; */
+
+    /*Total posicionamiento a la parte inferior*/
+    bottom: 0%;
+
+    /*Total posicionamiento a la parte dereche*/
+    right: 0%;
+}

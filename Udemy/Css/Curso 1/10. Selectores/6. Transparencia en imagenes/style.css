@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    color: crimson;
+}
+
+div.contenedor{
+ 
+    border: 3px dashed greenyellow;
+    width: 30%;
+    margin: auto;
+    height: 20%;
+    padding: 15px;
+    color: #457b9d;
+    text-align: center; 
+
+}
+
+img{
+    opacity: 1.0;
+}
+
+img:hover{
+    opacity: 0.5;
+}

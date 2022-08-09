@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+    /*para sombrear ls textos*/
+    /*En la tercera es el blur difuminado de la sombra*/
+    text-shadow: 2px 2px 5px grey;
+    color: pink;
+}
+
+div.contenedor{
+    width: 30%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid #457b9d;
+    padding: 15px;
+    text-align: center;
+    /*para dar sombra a las cajas*/
+    /*Son 4 proiedades de sombra: lados, arriba y abajo, Difuminado, y spread=propagar*/
+    box-shadow: 2px 2px 5px 5px grey;   
+    color: #457b9d;
+    border-radius: 15px;
+}
+
+div.cabecero{
+    background-color: #4cc9f0;
+}
+
+div.cuerpo{
+    padding-top: 2px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px rgb(177,  177,  177);
+}
+
+img{
+    width: 80%;
+    height: 50%;
+}
+
+/* https://html-css-js.com/css/generator/text-shadow/ */
+#demotext {
+    font-size: 5em;
+    color: pink;
+    background: #232323;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px pink, 0 0 30px pink, 0 0 40px pink, 0 0 55px pink, 0 0 75px pink;
+    color: #FFFFFF;
+    background: #232323;
+    }

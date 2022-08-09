@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+    color: #457b9d;
+}
+
+div.contenedor{
+    width: 30%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid #000000;
+    padding: 15px;
+    color:aqua; 
+    text-align: center;
+}
+
+/*Los Pseudo elementos se pones despues de cada ::*/
+
+/*Pseudo elemento que modifica la seleccion de texto*/
+div.contenedor p::selection{
+    color: violet;
+    background-color: aqua;
+}
+
+/*Pseudo elemento que modifica la primera linea de texto */
+div.contenedor p::first-line{
+    font-variant: small-caps;
+    color: red;
+}
+
+/*Pseudo elemento que modifica la primera letra de cada parrafo*/
+div.contenedor p::first-letter{
+    font-size: 1.5em;
+}
+
+/*Pseudo elementos antes o despues*/
+
+/*Pseudo elemento antes:*/
+div.contenedor p::before{
+    content: "- ";
+}
+
+/*Pseudo elemento despues:*/
+div.contenedor p::after{
+    content: " -";
+}

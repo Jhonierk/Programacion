@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox en Css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Flexbox en Css</h1>
+    <div class="contenedor">
+        <p>Texto 1</p>
+        <p style="font-size: 2.5em;">Texto 2</p>
+        <p style="height: 100px; font-size: 1.5em;">Texto 3</p>
+        
+       <!-- <p style="order:0">Texto 1</p> 
+    Con eso se puede organizar el orden de los elementos dependiendo del numero-->
+
+    <!--agranda el tamaño de los elementos, el elemento con un numero mayor tiene pas prioridad-->
+        <p style="flex-grow: 1;">     Texto 2</p>
+
+    <!--Modifica el tamaño del elemento-->
+        <p style="flex-basis: 200;"> Texto 3</p>
+    </div>
+</body>
+</html>

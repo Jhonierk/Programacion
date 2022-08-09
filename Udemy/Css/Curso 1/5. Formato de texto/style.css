@@ -1,0 +1,45 @@
+h1{
+    color: #ef476f;
+    background-color: beige;
+    text-align: center;
+
+    /*pone el texto a mayuscula*/
+    text-transform:uppercase;
+
+    /*siver para agregar sombra al texto*/
+    text-shadow: 2px 2px 2px #ef476f;
+
+    /* modifica el espacio entre las letras*/
+    letter-spacing: 3px;
+
+    /*aqui espacio entre palabras*/
+    word-spacing: 10px;
+
+    /**overlina pone una linea arriba del texto, y  underline abajo del texto*/
+    text-decoration: overline underline;
+
+}
+
+.caja{
+    padding: 15px;
+    margin: auto;
+    width: 50%;
+    background-color: #219ebc;
+    border-radius: 5px;
+    color: white;
+}
+
+.texto{
+    text-align: justify;
+
+    /*Para identar el texto*/
+    text-indent: 30px;
+    
+    /*para configurar la sangria del texto*/
+    line-height: 3;
+
+    /**/
+    white-space: normal;
+
+    text-shadow: 1px 1px 2px #ced4da;
+}

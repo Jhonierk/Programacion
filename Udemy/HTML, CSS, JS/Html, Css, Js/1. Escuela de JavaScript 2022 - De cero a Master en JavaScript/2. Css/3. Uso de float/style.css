@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+main{
+    background-color: rgb(176, 150, 211);
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    /*overflow hidden hara que los elementos float no se salgan de su contenedor padre*/
+    overflow: hidden;
+}
+
+.caja{
+    width: 500px;
+    height: 200px;
+    margin: 20px;
+}
+
+.img{
+   
+    float: left;
+    width: auto;
+}
+
+.text{
+    float: right;   
+}
+
+.articulo{
+    background: rgb(118, 187, 252);
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+}
+
+.articulo h2{
+    text-align: center;
+    padding: 10px;
+}
+
+.articulo img{
+    width: 200px;
+    float: right;
+    margin: 30px;
+    padding: 2px;
+}
+
+.articulo p{
+    text-align: justify;
+    padding: 5px;
+}

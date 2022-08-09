@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+    color: #457b9d;
+}
+
+div.contenedor{
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid #000000;
+    padding: 15px;
+    color:aqua; 
+}
+
+ div.contenedor.descendiente p{
+    background-color: bisque;
+    
+ }

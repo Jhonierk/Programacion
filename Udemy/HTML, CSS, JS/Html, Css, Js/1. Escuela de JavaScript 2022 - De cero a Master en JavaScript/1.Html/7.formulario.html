@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <!--En la parte de action y method solo se realiza en la parte de js-->
+    <form action="" method="">
+
+        <label for="numero">Numero</label>
+        <input type="number" name="numero" id="numero" placeholder="Solo numeros">
+
+        <br><br>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" value="Jhonny">
+
+        <br><br>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required>
+
+        <br><br>
+        <label for="nombre">Nombre</label>
+        <!--Hace que recuerde en donde estaba el cursor-->
+        <input type="text" name="nombre" id="nombre" autofocus>
+
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" readonly>
+
+        <br><br>
+        <label for="pass">Contaseña: </label>
+        <input type="password" name="pass" id="pass" disabled>
+
+        <br><br>
+        <input type="submit" value="Enviar" name="enviar">
+    </form>
+</body>
+</html>

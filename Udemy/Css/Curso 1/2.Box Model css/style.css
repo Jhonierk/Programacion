@@ -1,0 +1,75 @@
+/*
+con esto sirve para eliminar el margin y el padding de la pagina
+*{
+    margin: 0;
+    padding: 0;
+}
+*/
+
+h1{
+    text-align: center;
+    color:pink;
+}
+div{
+    /*
+    Esta etiquetado para que el box-sizing funcione correctamente
+    padding: 10px;
+    margin: 20px;
+    /El outline es un espacio que va entre el margin y el padding/
+    outline: 10px outset #adf;
+    /El outlin-offset es un espacio invisible(no se le puede poner color y solo del mismo tamaño en los lados)/
+    outline-offset: 10px;
+    */
+
+    padding: 10px 15px 5px 3px;
+    border: 1px solid #457b9d;
+    background-color:#82bdee;  
+    
+    /*
+    tamaño total del contenido
+    width: 300px;
+    */
+
+    /*Para centrar un elemento es necesario usar: margin: auto;*/
+    margin: auto;
+
+    /*max-width toma el tamañao maximo del contenido que se puede reducir puede aplicarcce
+    en px o en %*/
+    max-width: 300px;
+
+    /*
+    Largo del contenido
+    height: 300px;
+    */
+
+    /*
+    - box-sizing sirve para no pasar el tamaño estrablecido del contenido
+    - Es necesario para esto que el padding y el margin esten en 0px; para su correcto funcionamiento
+    - outline y offset no sirven al aplicar box-sizing
+    */
+    box-sizing: border-box;
+}
+
+p .heredar{
+    margin: inherit;
+}
+
+/* elementos del segundo index2.html margin collapse*/
+
+.caja1{
+    padding: 10px 15px 5px 3px;
+    border: 1px solid #457b9d;
+    margin: 30px;
+    background-color:#82bdee;  
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.caja2{
+    padding: 10px 15px 5px 3px;
+    border: 1px solid #457b9d;
+    margin: 20px;
+    background-color:#82bdee;  
+    max-width: 300px;
+    box-sizing: border-box;
+}

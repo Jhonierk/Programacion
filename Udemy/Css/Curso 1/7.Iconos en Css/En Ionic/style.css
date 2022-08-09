@@ -1,0 +1,29 @@
+/*
+https://ionic.io/ionicons
+*/
+
+h1{
+    text-align: center;
+    color: crimson;
+}
+
+div{
+    padding: 15px;
+    margin: auto;
+    max-width: 400px;
+}
+
+.icono-azul{
+    font-size: 2.5em;
+    color: cornflowerblue;
+    vertical-align: bottom;
+}
+
+.icono-rojo{
+
+    color: crimson;
+}
+
+.material-icons .md-48{
+    font-size: 150px;
+}

@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+    color:#e63946;
+}
+
+.caja{
+    padding: 10px;
+    color: white;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    margin: 5px auto;
+    font-size: 10px;
+    float: left;
+}
+
+.rojo{
+    background-color:crimson;
+}
+
+.rosa{
+    background-color: deeppink;
+}
+
+.rgb{
+    background-color:rgb(131,56,235);
+}
+
+/*El cuarto valor de rgb es la transparencia donde 1 es la menor transparencia y 0 es la mayor tansparencia 0.5 seria el 50%*/
+.rgba{
+    background-color:rgb(131,56,235,.5)
+}
+
+.hexadecimal{
+    background-color: #0091ad;
+}
+
+.hexa_trasparencia{
+    background-color: #0090ad88;
+}
+
+.hsl{
+    background-color: hsl(194, 100%, 50%);
+}
+
+.hsla{
+    background-color: hsla(0, 100%, 50%, 0.418);
+}

@@ -1,0 +1,85 @@
+h1{
+    text-align: center;
+}
+
+.rojo{
+    border: 10px solid rgb(235, 17, 17);
+}
+
+.rosa{
+    border: 10px dashed rgb(236, 159, 172);
+}
+
+.amarillo{
+    border: 10px double rgb(248, 248, 12);
+}
+
+.violeta{
+    border: 10px dotted rgb(106, 8, 131);
+}
+
+/*Ahora los tipos de bordes*/
+
+.punteado{
+    border-style: dotted;
+}
+
+.discontinuo{
+    border-style:dashed;
+}
+
+.solido{
+    border:5px solid;
+}
+
+.doble{
+    border: 5px double;
+}
+
+.surco{
+    border: 5px groove;
+    /*
+    border-width: 10px;
+    border-style: groove;
+    */
+}
+
+.cresta{
+    border: 5px ridge;
+}
+
+.recuadro{
+    border: 5px inset;
+}
+
+.outset{
+    border: 5px outset;
+}
+
+.sin{
+    border: none;
+}
+
+.oculto{
+    border: hidden;
+}
+
+.mixto{
+    border-style: dotted solid dashed double; 
+}
+
+.prueba{
+    border-style: dotted solid dashed double; 
+    border-color: pink yellow red blue;
+    border-width: 10px 4px 6px 11px
+}
+
+.complet{
+    border: 5px solid red;
+    border-radius: 20px;
+}
+
+.esquinas{
+    border: 10px solid pink;
+    border-radius: 10px 0px 10px 0px;
+}

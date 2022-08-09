@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+    color: crimson;
+    padding-bottom: 5000px;
+}
+
+div{
+    /* se oloco la posicion fixed o ajustada y 
+    tomara encuenta el valor de: top, left, rigth y bottom
+    Y queda por encima del resto de contenedores y elementos
+    puede ponerse en cualquier lugar sin tener encuenta la posicion del los demas elementos
+    */
+    position: fixed;
+    top: 100px;
+    left: 50px;
+    border: 3px solid crimson;
+    margin: auto;
+   
+}
+
+.chat{
+   /*Tambien queda el elemento pegado al scroll*/
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    border: 3px solid crimson;
+}

@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table, th, tr, td{
+    border: 3px solid rgb(85, 221, 210);
+}
+
+table{
+    /*Con esto los border (lines) de la tabla de juntan*/
+    border-collapse: collapse;
+    width: 500px;
+    text-align: center;
+}
+
+th,td{
+    padding: 10px;
+}
+
+th{
+    background-color: rgba(19, 3, 238, 0.333)
+
+}
+
+tr:hover{
+    background-color: gray;
+}

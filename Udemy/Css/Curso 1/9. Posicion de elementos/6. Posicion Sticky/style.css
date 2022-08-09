@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+    color: crimson;
+}
+
+div.absoluto{
+   /*La posicion stick hace que el elemento se quede pegado al scroll Es aconsejable para usar
+   Barras de navegacion*/
+
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    border: 3px solid skyblue;   
+}

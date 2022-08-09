@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.body{
+    border-top: 3px solid crimson;
+    text-align: center;
+    background-color: gray;
+    padding: 10px 20px 20px;
+}
+
+header.header1{
+    border: 3px solid cyan;
+    width: 80%;
+    margin: auto;
+    padding:10px;
+    background-color: black ;
+    color: white;   
+}
+
+nav.nav1{
+    border: 3px solid cyan;
+    width: 80%;
+    margin: auto;
+    background-color: black ;
+    color: white;
+    padding: 10px;
+}
+
+div.container{
+    border: 3px solid crimson;
+}
+
+section.section1{
+    border: 3px solid cyan;
+    max-width: 30%;
+    left: 20%;
+    background-color: black ;
+    color: white;
+    position: relative;
+    top: 10px;
+    left: 10%;
+    height: 700px;
+}
+
+header.header2{
+    border: 3px solid cyan;
+    width: 80%;
+    margin: auto;
+    padding:10px;
+    background-color: black ;
+    color: white; 
+    position: relative;
+    top: 10px;
+}
+
+nav.nav2{
+    border: 3px solid cyan;
+    width: 80%;
+    margin: auto;
+    background-color: black ;
+    color: white;
+    padding: 10px;
+    position: relative;
+    top: 3%;
+    height: 75%;
+}
+
+footer.footer1{
+    border: 3px solid cyan;
+    width: 80%;
+    margin: auto;
+    background-color: black ;
+    color: white;
+    padding: 10px;
+    position: relative;
+    top: 5%;
+   
+}
+
+section.section2{
+    border: 3px solid cyan;
+    max-width: 48%;
+    left: 20%;
+    background-color: black ;
+    color: white;
+    position: relative;
+    top: -695px;
+    left:42%;
+    height: 700px;
+}

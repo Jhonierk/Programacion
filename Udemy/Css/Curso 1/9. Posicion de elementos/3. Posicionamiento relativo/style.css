@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+    color: crimson;
+}
+
+div{
+    /* se oloco la posicion relativa y tomara encuenta el valor de: top, left, rigth y bottom*/
+    position: relative;
+    top: 100px;
+    left: 50px;
+    border: 3px solid crimson;
+    margin: auto;
+}

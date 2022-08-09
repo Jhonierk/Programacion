@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 2px #a8dadc;
+    color: #e63064
+}
+
+div.contenedor{
+    display:flex;
+    background-color: #560bad;
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+    /*con flex-flow los elementos no se saldran*/
+    flex-flow   : row wrap;
+    /*Valor por derechos a que los elementos esten en el lado izquierdo
+    justify-content: flex-start;
+    center: en e centro
+    flex-end: para que carguen a la derecha 
+    space-between = (espacio entre los elementos), cada elemento se pone hacia los extremos
+    space-around: Se agregan esapacios de cada elemento izquierda y derecha
+    space-evenly: (DEja espacos de la misma medida entre los elementos)
+    */
+    
+    /*Para centrar bien los elementos se necesitan los siguiente:*/
+    flex-flow   : row wrap;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+}
+
+div.contenedor > p{
+    background-color: #4895ef;
+    color: #f1faee;
+    margin: 20px;
+    padding: 15px;
+    font-size: 1.5em;
+}
