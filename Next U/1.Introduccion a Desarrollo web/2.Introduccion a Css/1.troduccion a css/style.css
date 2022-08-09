@@ -1,0 +1,41 @@
+*{
+    display: flex;
+    align-items: center;
+}
+
+header .logo{
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: #53F4ff;
+    border-radius: 50%;
+}
+
+body{
+    margin: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #DDDBF1;
+    color: white;
+}
+
+.main-container{
+    height: 100%;
+    padding: 40px !important;
+}
+
+.centered-column,
+.centered-row{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.left{
+    background-color: #7D5BA6;
+    height: 100%;
+    width: 100%;
+}
