@@ -1,0 +1,136 @@
+<!--
+Un string consiste en uno o más caracteres encerrados entre simple o doble comillas.
+
+Concatenación de cadenas (+)
+JavaScript permite concatenar cadenas utilizando el operador +.
+
+El siguiente fragmento de código concatena tres cadenas para producir su salida:
+
+let final='La entrada tiene ' + contador + ' caracteres.';
+Dos de las cadenas concatenadas son cadenas literales. La del medio es un entero que automáticamente se convierte a cadena y luego se concatena con las otras.
+
+Propiedad length
+Retorna la cantidad de caracteres de un objeto String.
+
+let nom='Juan';
+document.write(nom.length); //Resultado 4
+Métodos
+charAt(pos)
+Retorna el carácter del índice especificado. Comienzan a numerarse de la posición cero.
+
+let nombre='juan';
+let caracterPrimero=nombre.charAt(0);
+substring (posinicial, posfinal)
+Retorna un String extraída de otro, desde el carácter 'posinicial' hasta el 'posfinal'-1:
+
+	cadena3=cadena1.substring(2,5);
+En este ejemplo, "cadena3" contendrá los caracteres 2, 3, 4 sin incluir el 5 de cadena1 (Cuidado que comienza en cero)
+
+indexOf (subCadena)
+Devuelve la posición de la subcadena dentro de la cadena, o -1 en caso de no estar.
+
+Tener en cuenta que puede retornar 0 si la subcadena coincide desde el primer carácter.
+
+let nombre='Rodriguez Pablo';
+let pos=nombre.indexOf('Pablo');
+if (pos!=-1)
+  document.write ('Está el nombre Pablo en la variable nombre');
+toUpperCase()
+Convierte todos los caracteres del String que invoca el método a mayúsculas:
+
+cadena1=cadena1.toUpperCase();
+Luego de esto, cadena1 tiene todos los caracteres convertidos a mayúsculas.
+
+toLowerCase()
+Convierte todos los caracteres del String que invoca el método a minúsculas:
+
+cadena1=cadena1.toLowerCase();
+Luego de esto, cadena1 tiene todos los caracteres convertidos a minúsculas.
+
+Un string consiste en uno o más caracteres encerrados entre simple o doble comillas.
+
+Concatenación de cadenas (+)
+JavaScript permite concatenar cadenas utilizando el operador +.
+
+El siguiente fragmento de código concatena tres cadenas para producir su salida:
+
+let final='La entrada tiene ' + contador + ' caracteres.';
+Dos de las cadenas concatenadas son cadenas literales. La del medio es un entero que automáticamente se convierte a cadena y luego se concatena con las otras.
+
+Propiedad length
+Retorna la cantidad de caracteres de un objeto String.
+
+let nom='Juan';
+document.write(nom.length); //Resultado 4
+Métodos
+charAt(pos)
+Retorna el carácter del índice especificado. Comienzan a numerarse de la posición cero.
+
+let nombre='juan';
+let caracterPrimero=nombre.charAt(0);
+substring (posinicial, posfinal)
+Retorna un String extraída de otro, desde el carácter 'posinicial' hasta el 'posfinal'-1:
+
+	cadena3=cadena1.substring(2,5);
+En este ejemplo, "cadena3" contendrá los caracteres 2, 3, 4 sin incluir el 5 de cadena1 (Cuidado que comienza en cero)
+
+indexOf (subCadena)
+Devuelve la posición de la subcadena dentro de la cadena, o -1 en caso de no estar.
+
+Tener en cuenta que puede retornar 0 si la subcadena coincide desde el primer carácter.
+
+let nombre='Rodriguez Pablo';
+let pos=nombre.indexOf('Pablo');
+if (pos!=-1)
+  document.write ('Está el nombre Pablo en la variable nombre');
+toUpperCase()
+Convierte todos los caracteres del String que invoca el método a mayúsculas:
+
+cadena1=cadena1.toUpperCase();
+Luego de esto, cadena1 tiene todos los caracteres convertidos a mayúsculas.
+
+toLowerCase()
+Convierte todos los caracteres del String que invoca el método a minúsculas:
+
+cadena1=cadena1.toLowerCase();
+
+Luego de esto, cadena1 tiene todos los caracteres convertidos a minúsculas.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        let cadena = prompt('Ingrese una cadena:');
+        document.write('La cadena ingresada es:' + cadena);
+        document.write('<br>');
+        document.write('La cantidad de caracteres son:' + cadena.length);
+        document.write('<br>');
+        document.write('El primer carácter es:' + cadena.charAt(0));
+        document.write('<br>');
+        document.write('Los primeros 3 caracteres son:' + cadena.substring(0, 3));
+        document.write('<br>');
+        if (cadena.indexOf('hola') != -1) {
+            document.write('Se ingresó la subcadena hola');
+        } else {
+            document.write('No se ingresó la subcadena hola');
+        }
+        document.write('<br>');
+        document.write('La cadena convertida a mayúsculas es:' + cadena.toUpperCase());
+        document.write('<br>');
+        document.write('La cadena convertida a minúsculas es:' + cadena.toLowerCase());
+        document.write('<br>');
+    </script>
+
+</body>
+
+</html>
+
+Hemos presentado los métodos más comunes de la clase String, pero existen otros que iremos viendo a medida que avancemos en el curso.

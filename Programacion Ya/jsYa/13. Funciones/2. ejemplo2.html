@@ -1,0 +1,34 @@
+<!--
+    Acotaciones
+Hemos estado haciendo uso de funciones existentes por defecto en JavaScript como son:
+
+parseInt
+parseFloat
+Problema: Confeccionar una función que solicite el ingreso de un entero y nos muestre la tabla de multiplicar de dicho valor. Llamar luego una vez a la función.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        function calcularTabla() {
+            let valor = parseInt(prompt("Ingrese que tabla de multiplicar quiere obtener"))
+            for (let f = 1; f <= 10; f++) {
+                let tabla = f * valor;
+                document.write(f + " * " + valor + " = " + tabla + '<br>')
+
+            }
+        }
+
+        calcularTabla();
+    
+
+    </script>
+</body>
+</html>

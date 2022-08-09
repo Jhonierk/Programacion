@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Saludar(nombre){
+            //Si el nombre existe lo imprime, en caso contrario  si no existe imprime jhonny
+            let n = nombre ? nombre : 'jhonny';
+            document.write(`Bienvenido ${n}`);
+            /*
+            if(nombre){
+                document.write(nombre)
+            }else{
+                document.write('jhonny')
+            }
+            */
+        }
+        Saludar('Kira');
+
+        function dividir(a, b){
+            let s = a / b;
+            if(isNaN(s)){
+                return 0;
+            }else{
+                return s;
+            }
+            //En ternario seria lo siguiente:
+            return isNaN(s) ? 0: s;
+        }
+
+        document.write(dividir('a',2));
+    </script>
+</body>
+</html>

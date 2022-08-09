@@ -1,0 +1,40 @@
+<!--
+Realizar la búsqueda de un string clave en un string fuente. Se deberá ingresar una frase o texto (fuente) y luego la clave a buscar. 
+En caso de encontrarla, imprimir la posición, de lo contrario una leyenda que indique que no está.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let texto = prompt('Por favor escribe una oracion: ');
+        document.write(texto+ '<br><br>');
+        let palabra = prompt('Ingrese la palabra a buscar: ');
+        //si indexOf no encuentra un valor retorna -1
+        if(texto.indexOf(palabra) != -1){
+            document.write('La frase ingresada contiene la palabra: ' + palabra +
+                ' a partir de la posición ' + texto.indexOf(palabra));
+        }else {
+            document.write('La frase ingresada no contiene la palabra: ' + palabra);
+        }
+    </script>
+</body>
+</html>
+<!--
+<script>
+        let frase = prompt('Ingrese una oración:');
+        document.write(frase + '<br><br>');
+        let palabra = prompt('Ingrese una palabra:');
+        if (frase.indexOf(palabra) != -1) {
+            document.write('La frase ingresada contiene la palabra: ' + palabra +
+                ' a partir de la posición ' + frase.indexOf(palabra));
+        } else {
+            document.write('La frase ingresada no contiene la palabra: ' + palabra);
+        }
+    </script>
+-->

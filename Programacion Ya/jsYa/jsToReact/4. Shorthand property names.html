@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        let nombre = 'jhonny';
+        let edad = 27;
+        let titulo = 'Tecnologo en sistemas';
+
+        //Se crea un objeto:
+        let persona = {
+            nombre,
+            edad,
+            titulo,
+        };
+        */
+        
+        //Tambien de la siguiente manera:
+        let persona ={
+            nombre: 'Jhonny',
+            edad : 27,
+            titulo : 'Tecnologo en sistemas',
+        };
+        
+        document.write(`nombre: ${persona.nombre} <br> Edad: ${persona.edad} <br> Titulo: ${persona.titulo}`);
+
+        //Ahora en react es de la siguiente manera:
+
+        //Imaginemos crear un componente con unas props:
+        function Componentes({initialState, totalCount}){
+            let [state, setState] = useState({initialState, totalCount})
+        }
+    </script>
+</body>
+</html>

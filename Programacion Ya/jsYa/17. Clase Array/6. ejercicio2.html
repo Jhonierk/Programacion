@@ -1,0 +1,71 @@
+<!--
+Realizar un programa que pida la carga de dos vectores numéricos. Obtener la suma de los dos vectores, dicho resultado guardarlo en un tercer vector del mismo tamaño. 
+Sumar componente a componente.
+El tamaño del vector es a elección.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let element,vectorA, vectorB, vectorC;
+        element = parseInt(prompt('Ingrese la cantidad del array: '));
+        vectorA = new Array(element);
+        vectorB = new Array(element);
+        vectorC = new Array(element);
+
+        function valorVectores(vectorA, vectorB){
+
+            for(let x = 0; x < vectorA.length; x++){
+                let numA = prompt('Por favor ingrese un valor del primer vector en posicion:'+x);
+                vectorA[x] = parseInt(numA);
+            }
+
+            for(let y = 0; y < vectorB.length; y++){
+                let numB = prompt('Por favor ingrese un valor del segundo vector en posicion:'+y);
+                vectorB[y] = parseInt(numB)
+            }
+        }
+
+        function sumaVectores(vectorA, vectorB, vectorC){
+            for(let z = 0; z < vectorC.length; z++){
+                vectorC[z] = vectorA[z] + vectorB[z];
+            }
+        }
+
+        function mostrarResultado(vectorC){
+            document.write('La suma de los vectores es: <br>');
+            for(let z = 0; z < vectorC.length; z++){
+                document.write(vectorC[z]+ ', ');
+            }
+        }
+
+        valorVectores(vectorA, vectorB);
+        sumaVectores(vectorA, vectorB, vectorC);
+        mostrarResultado(vectorC);
+
+    </script>
+</body>
+</html>
+
+<!--
+    <script language="javascript">
+window.onload = function()
+{
+var arra = [1,2,3,4,5];
+var arrb = [1,2,3,4,5];
+var arrc = [];
+for(var i = 0; i < arra.length; i++)
+{
+arrc[i] = arra[i] + arrb[i];
+}
+alert(arrc.toString());
+}
+</script>
+-->

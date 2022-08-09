@@ -1,0 +1,62 @@
+<!--
+Una función es un conjunto de instrucciones que resuelven una parte del problema y que puede ser utilizado (llamado) desde diferentes partes de un programa.
+Consta de un nombre y parámetros.
+Con el nombre llamamos a la función, es decir, hacemos referencia a la misma.
+Los parámetros son valores que se envían y son indispensables para la resolución del mismo.
+La función realizará alguna operación con los parámetros que le enviamos. Podemos cargar una variable, consultarla, modificarla, imprimirla, etc.
+
+
+Incluso los programas más sencillos tienen la necesidad de fragmentarse. Las funciones son los únicos tipos de subprogramas que acepta JavaScript. Tienen la siguiente estructura:
+function <nombre de función>(argumento1, argumento2, ..., argumento n) 
+{ 
+  <código de la función> 
+} 
+Debemos buscar un nombre de función que nos indique cuál es su objetivo (Si la función recibe un string y lo centra, tal vez deberíamos llamarla centrarTitulo). Veremos que una función puede variar bastante en su estructura, puede tener o no parámetros, retornar un valor, etc.
+
+Ejemplo: Mostrar un mensaje que se repita 3 veces en la página con el siguiente texto:
+
+'Cuidado'
+'Ingrese su documento correctamente'
+
+'Cuidado'
+'Ingrese su documento correctamente'
+
+'Cuidado'
+'Ingrese su documento correctamente'
+La solución sin emplear funciones es:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function mostrarMensaje() {
+            document.write("Cuidado<br>");
+            document.write("Ingrese su documento correctamente<br>");
+        }
+
+        mostrarMensaje();
+        mostrarMensaje();
+        mostrarMensaje();
+    
+    </script>
+</body>
+</html>
+<!--
+Recordemos que JavaScript es sensible a mayúsculas y minúsculas. Si fijamos como nombre a la función mostrarMensaje (es decir la segunda palabra con la primer letra en mayúscula) debemos respetar este nombre cuando la llamemos a dicha función.
+
+Es importante notar que para que una función se ejecute debemos llamarla desde fuera por su nombre (en este ejemplo: mostrarMensaje()).
+
+Cada vez que se llama una función se ejecutan todas las líneas contenidas en la misma.
+Si no se llama a la función, las instrucciones de la misma nunca se ejecutarán.
+
+A una función la podemos llamar tantas veces como necesitemos.
+Las funciones nos ahorran escribir código que se repite con frecuencia y permite que nuestro programa sea más entendible.
+-->

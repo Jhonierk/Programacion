@@ -1,0 +1,34 @@
+<!--
+Elaborar una función a la cual le enviemos tres enteros y muestre el menor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function menor(primero, segundo, tercero){
+            if(primero < segundo && primero < tercero){
+                document.write('El menor es el primero:  '+primero);
+            }else if(segundo < primero && segundo < tercero){
+                document.write('El menor es el segundo: '+segundo);
+            }else if(tercero < primero && tercero < segundo){
+                document.write('El menor es el tercero: '+tercero);
+            }
+        }
+        
+        let num1 = parseInt(prompt('Ingrese valor el primer numero: '));
+        let num2 = parseInt(prompt('Ingrese valor el segundo numero: '));
+        let num3 = parseInt(prompt('Ingrese valor el tercer numero: '));
+
+        menor(num1, num2, num3);
+    </script>
+</body>
+</html>
+<!--
+    
+-->

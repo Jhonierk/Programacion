@@ -1,0 +1,54 @@
+<!--
+Desarrollar un programa que permita ingresar un vector de 8 elementos, e informe:
+El valor acumulado de todos los elementos del vector.
+El valor acumulado de los elementos del vector que sean mayores a 36.
+Cantidad de valores mayores a 50.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        function arrayEdades(vector) {
+            let mayor = 0;
+            let mayorC = 0;
+            for (var i = 0; i < vector.length; i++) {
+                let edad = prompt("Por favor digitar edad: " + i);
+                vector[i] = parseInt(edad);
+                if (vector[i] > 36 && vector[i] < 50) {
+                    mayor += 1;
+                }else if (vector[i] > 50) {
+                    mayorC += 1;
+                }
+
+            }
+            document.write('Cantidad de edades entre 36 & 50: ' + mayor + '<br>');
+            document.write('Cantidad de edades mayor a 50: ' + mayorC + '<br>');
+        }
+
+        function arraySuma(vector) {
+            let suma = 0;
+            for (let f = 0; f < vector.length; f++) {
+                suma += vector[f];
+            }
+            document.write('La suma de las edades es: ' + suma);
+        }
+
+        let vector;
+        vector = new Array(8);
+        arrayEdades(vector);
+        arraySuma(vector);
+        arrayMayor(vector);
+    </script>
+</body>
+
+</html>

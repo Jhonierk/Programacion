@@ -1,0 +1,58 @@
+<!--
+Escribir un programa que lea 10 notas de alumnos y nos informe cuántos tienen notas mayores o iguales a 7 y cuántos menores.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x, nota, notaB, notaM;
+        x = 1;
+        notaB = 0;
+        notaM = 0;
+
+        while(x < 11){
+            nota = parseInt(prompt('Por favor digite la nota del alumno '+x+' :'));
+            if(nota >= 7){
+                notaB = notaB + 1;
+            }
+            if(nota < 7){
+                notaM =  notaM + 1;
+            }
+            x += 1;
+        }
+        document.write('Alumnos con nota mayor: '+notaB);
+        document.write('<br>');
+        document.write('Alumnos con nota menor: '+notaM);
+    </script>
+    
+</body>
+</html>
+
+<!--
+    Solucion de la pagina:
+
+    <script>
+        let x = 0; 
+        let cant1 = 0;
+        let cant2 = 0;
+        while (x < 10) {
+            let nota;
+            nota = parseInt(prompt('Ingrese nota'));
+            if (nota >= 7) {
+                cant1 = cant1 + 1;
+            } else {
+                cant2 = cant2 + 1;
+            }
+            x = x + 1;
+        }
+        document.write('Cantidad de alumnos con notas mayores o iguales a 7:' + cant1);
+        document.write('<br>');
+        document.write('Cantidad de alumnos con notas menores a 7:' + cant2);
+    </script>
+-->

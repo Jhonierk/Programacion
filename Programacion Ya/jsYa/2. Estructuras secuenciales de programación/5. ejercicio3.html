@@ -1,0 +1,54 @@
+<!--
+Realizar un programa que lea cuatro valores numéricos e informar su suma y producto.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1, num2, num3, num4, suma, producto;
+        num1 = parseInt(prompt("Por favor ingresar num1: "));
+        num2 = parseInt(prompt("Por favor ingresar num2: "));
+        num3 = parseInt(prompt("Por favor ingresar num3: "));
+        num4 = parseInt(prompt("Por favor ingresar num4: "));
+
+        suma = num1 + num2 + num3 + num4;
+        producto= num1 * num2 * num3 * num4;
+
+        document.write("La suma de los numeros es: "+ suma);
+        document.write("<br>");
+        document.write("El Producto de los numeros es: "+producto);
+    </script>
+    
+</body>
+</html>
+
+<!--
+    Solucion de la pagina
+
+    <script>
+        let num1;
+        let num2;
+        let num3;
+        let num4;
+        num1 = prompt('Ingrese primer valor:');
+        num2 = prompt('Ingrese segundo valor:');
+        num3 = prompt('Ingrese tercer valor:');
+        num4 = prompt('Ingrese cuarto valor:');
+        let suma;
+        suma = parseInt(num1) + parseInt(num2) + parseInt(num3) + parseInt(num4);
+        let producto;
+        producto = parseInt(num1) * parseInt(num2) * parseInt(num3) * parseInt(num4);
+        document.write('La suma de los cuatro valores es:');
+        document.write(suma);
+        document.write('<br>');
+        document.write('El producto de los cuatro valor es:');
+        document.write(producto);
+    </script>
+-->

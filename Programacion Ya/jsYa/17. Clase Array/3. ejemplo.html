@@ -1,0 +1,78 @@
+<!--
+Es común utilizar una sintaxis más concisa para inicializar los dos vectores:
+Es el mismo ejemplo anterio pero mas corto.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        function mostrarFecha(meses, dias) {
+            let num = parseInt(prompt('Ingrese número de mes:'));
+            document.write('Corresponde al mes:' + meses[num - 1]);
+            document.write('<br>');
+            document.write('Tiene ' + dias[num - 1] + ' días');
+        }
+
+        let meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+        let dias = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        mostrarFecha(meses, dias);
+    </script>
+
+</body>
+
+</html>
+<!--
+Hay mucho por ver de la clase Array más adelante, por ejemplo:
+
+Podemos definir arreglos con elementos de distinto tipo en cada componente:
+
+        let persona = ['Diego Martinez', 50, 78.50];
+        document.write(persona[0] + ' tiene una edad de ' + persona[1] + ' y un peso de ' + persona[2])
+Por pantalla aparece:
+
+Diego Martinez tiene una edad de 50 y un peso de 78.5
+Podemos definir un vector sin indicar el tamaño del mismo y luego cargar en cualquier posición:
+
+        let ingresos = [];
+        ingresos[3] = 1000;
+        ingresos[5] = 5000;
+        for (let f = 0; f <= 6; f++) {
+            document.write(ingresos[f] + '<br>')
+        }
+Las componentes que no han sido inicializadas retornan el valor undefined.
+
+undefined
+undefined
+undefined
+1000
+undefined
+5000
+undefined
+Podemos definir componentes del arreglo que sean otro arreglo (crear estructuras de datos tan complejas como necesitemos):
+
+        let matrizIdentidad = [
+            [1, 0, 0],
+            [0, 1, 0],
+            [0, 0, 1]
+        ];
+        for (let f = 0; f < 3; f++) {
+            for (let c = 0; c < 3; c++) {
+                document.write(matrizIdentidad[f][c] + ' ');
+            }
+            document.write('<br>');
+        }
+Luego tenemos como resultado en la pantalla:
+
+1 0 0
+0 1 0
+0 0 1
+Luego veremos que tenemos otras muchísimas funcionalidades con esta estructura de datos.
+-->

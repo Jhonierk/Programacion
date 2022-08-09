@@ -1,0 +1,27 @@
+<!--
+Confeccionar un programa que solicite el ingreso de un número y nos muestre dicho valor elevado a la tercera potencia.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt('Por favor ingrese un numero: '));
+        let potencia = parseInt(Math.pow(num,3));
+        document.write('La tercera potencia de: '+num+' Es: '+potencia);
+    </script>
+</body>
+</html>
+
+<!--
+<script>
+        let valor = parseInt(prompt('Ingrese un valor:'));
+        let resu = Math.pow(valor, 3);
+        document.write('El valor ' + valor + ' elevado a la 3 es ' + resu);
+    </script>
+-->

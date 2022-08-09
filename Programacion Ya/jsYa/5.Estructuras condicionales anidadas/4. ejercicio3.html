@@ -1,0 +1,47 @@
+<!--
+Confeccionar un programa que permita cargar un número entero positivo de hasta tres cifras y muestre un mensaje indicando si tiene 1, 2, o 3 cifras. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num;
+        num = parseInt(prompt("Por favor digite un numero: "));
+        if (num > 99) {
+            document.write("El numero: " + num + " Tiene  3 cifras");
+        } else if (num < 9) {
+            document.write("El numero: " + num + " Tiene 1 cifras");
+        } else {
+            if (num < 99) {
+                document.write("El numero: " + num + " Tiene 2 cifras");
+            } 
+        }
+    </script>
+
+</body>
+
+</html>
+
+<!--
+<script>
+        let num;
+        num = parseInt(prompt('Ingrese un número de 1,2 o 3 dígitos'));
+        if (num < 10) {
+            document.write('Tiene un dígito');
+        } else {
+            if (num < 100) {
+                document.write('Tiene dos dígitos');
+            } else {
+                document.write('Tiene tres dígitos');
+            }
+        }
+    </script>
+-->

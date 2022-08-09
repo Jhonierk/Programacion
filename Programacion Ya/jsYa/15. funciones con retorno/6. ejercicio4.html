@@ -1,0 +1,56 @@
+<!--
+    Elaborar una función que reciba tres enteros y retorne el promedio.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let pro;
+        let num = 0;
+        let suma = 0;
+        function promedio() {
+            for (let x = 1; x <= 3; x++) {
+                num = parseInt(prompt('Por favor ingrese un numero: '));
+                suma += num;
+                pro = suma / x;
+                document.write('Numeros ingresados: ' + num + '<br>');
+            }
+            return pro;
+        }
+
+        let p = promedio();
+        document.write('La suma de los numeros es: ' + suma + ' <br>');
+        document.write('El promedio de los numeros es: ' + p);
+
+
+
+    </script>
+</body>
+</html>
+
+<!--
+    <script>
+        //Elaborar una función que reciba tres enteros y retorne el promedio.
+
+        function promediar(x1, x2, x3) {
+            let promedio = (x1 + x2 + x3) / 3;
+            return promedio;
+        }
+
+        let valor1 = parseInt(prompt('Ingrese primer valor:'));
+        let valor2 = parseInt(prompt('Ingrese segundo valor:'));
+        let valor3 = parseInt(prompt('Ingrese tercer valor:'));
+        document.write('Los tres valores ingresados son ' + valor1 + ' ' + valor2 + ' ' + valor3 + '<br>');
+        let pro;
+        pro = promediar(valor1, valor2, valor3);
+        document.write('El promedio es :' + pro);
+    </script>
+-->

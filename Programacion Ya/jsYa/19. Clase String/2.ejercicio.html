@@ -1,0 +1,25 @@
+<!--
+Ingresar una serie de nombres por teclado hasta que se cargue la palabra Fin, y mostrar cuántos nombres se ingresaron.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre;
+        let cant = 0;
+        do {
+            nombre = prompt('Ingrese un nombre (Terminar ingresando Fin):');
+            cant++;
+        } while (nombre != 'Fin');
+        //para descontar la palabra Fin
+        cant--;
+        document.write('Se ingresaron ' + cant + ' palabras');
+    </script>
+</body>
+</html>

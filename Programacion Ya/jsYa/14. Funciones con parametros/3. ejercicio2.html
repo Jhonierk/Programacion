@@ -1,0 +1,85 @@
+<!--
+Confeccionar una función a la cual le envíe tres enteros y los muestre ordenados de menor a mayor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ordenar(uno, dos, tres){
+            if(uno < dos && uno < tres){
+                if(dos < tres && dos > uno){
+                    document.write(uno+' , '+dos+' , '+tres+'<br>');
+                    document.write('Primero, segundo, tercero');
+                }
+                
+            }else if(dos < uno && dos < tres){
+                if(uno < tres && uno > dos){
+                    document.write(dos+' , '+uno+' , '+tres+'<br>');
+                    document.write('Segundo, Primero, Tercero');
+                }
+            }else if(tres < dos && tres < uno){
+                if(dos < uno && dos > tres ){
+                    document.write(tres+' , '+dos+' , '+uno+'<br>');
+                    document.write('Tercero, segundo, primero');
+                }
+            }
+        }
+
+        let num1 = parseInt(prompt('Ingrese primer valor: '));
+        
+        let num2 = parseInt(prompt('Ingrese segundo valor: '));
+        
+        let num3 = parseInt(prompt('Ingrese tercer valor: '));
+
+        ordenar(num1, num2, num3);
+    </script>
+</body>
+</html>
+
+<!--
+    <script>
+        //Confeccionar una función a la cual le envíe tres enteros y 
+        //los muestre ordenados de menor a mayor.
+
+        function mostrarOrdenados(x1, x2, x3) {
+            if (x1 < x2 && x1 < x3) {
+                document.write(x1 + ' ');
+                if (x2 < x3) {
+                    document.write(x2 + ' ' + x3);
+                } else {
+                    document.write(x3 + ' ' + x2);
+                }
+            } else {
+                if (x2 < x3) {
+                    document.write(x2 + ' ');
+                    if (x1 < x3) {
+                        document.write(x1 + ' ' + x3);
+                    } else {
+                        document.write(x3 + ' ' + x1);
+                    }
+                } else {
+                    document.write(x3 + ' ');
+                    if (x1 < x2) {
+                        document.write(x1 + ' ' + x2);
+                    } else {
+                        document.write(x2 + ' ' + x1);
+                    }
+                }
+            }
+        }
+
+
+        let valor1 = parseInt(prompt('Ingrese primer valor:'));
+        let valor2 = parseInt(prompt('Ingrese segundo valor:'));
+        let valor3 = parseInt(prompt('Ingrese tercer valor:'));
+        document.write('Los tres valores ingresados son ' + valor1 + ' ' + valor2 + ' ' + valor3 + '<br>');
+        document.write('Los valores ordenados de menor a mayor son: ');
+        mostrarOrdenados(valor1, valor2, valor3);
+    </script>
+-->

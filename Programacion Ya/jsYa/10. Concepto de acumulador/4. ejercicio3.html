@@ -1,0 +1,71 @@
+<!--
+En una empresa trabajan 5 empleados cuyos sueldos oscilan entre $100 y $500, 
+realizar un programa que lea los sueldos que cobra cada empleado e informe cuántos empleados cobran entre $100 y $300 y cuántos cobran más de $300. 
+Además el programa deberá informar el importe que gasta la empresa en sueldos al personal.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x,money, importe, cant1, can2;
+        x = 1;
+        cant1 = 0;
+        cant2 = 0;
+        importe = 0;
+        while(x <= 5){
+            money = parseInt(prompt('Por favor ingresar el sueldo del empleado '+x+' :'));
+            importe += money;
+            if(money >= 100 && money <= 300){
+                cant1 = cant1 + 1;
+            }   
+            if(money > 300){
+                cant2 += 1;
+            }
+            x+=1;
+
+            
+        }
+        document.write('Cantidad de empleado que cobran entre 100 y 300: '+cant1);
+        document.write('<br>');
+        document.write('Cantidad de empleados que cobran mas de 300: '+cant2);
+        document.write('<br>');
+        document.write('Y el importe total es de: '+importe);
+    </script>
+    
+</body>
+</html>
+
+<!--
+    Solucion de pagina:
+
+     <script>
+        let cont1 = 0;
+        let cont2 = 0;
+        let total = 0;
+        let sueldo;
+        let x = 0;
+        while (x < 5) {
+            sueldo = parseInt(prompt('Ingrese el sueldo'));
+            if (sueldo <= 300) {
+                cont1 = cont1 + 1;
+            } else {
+                cont2 = cont2 + 1;
+            }
+            total = total + sueldo;
+            x = x + 1;
+        }
+        document.write('Cantidad de empleados que cobran 300 o menos:' + cont1);
+        document.write('<br>');
+        document.write('Cantidad de empleados que cobran más de 300:' + cont2);
+        document.write('<br>');
+        document.write('Gastos en sueldos en la empresa:' + total);
+    </script>
+
+    
+-->

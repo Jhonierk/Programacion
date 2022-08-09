@@ -1,0 +1,94 @@
+<!--
+En un banco se procesan datos de las cuentas corrientes de sus clientes. De cada cuenta corriente se conoce: número de cuenta,
+nombre del cliente y saldo actual. El ingreso de datos debe finalizar al ingresar un valor negativo en el número de cuenta.
+Se pide confeccionar un programa que lea los datos de las cuentas corrientes e informe:
+a) De cada cuenta: número de cuenta, nombre del cliente y estado de la cuenta según su saldo, sabiendo que:
+Estado de la cuenta	'Acreedor' si el saldo es >0.
+			'Deudor' si el saldo es <0.
+			'Nulo' si el saldo es =0.
+b) La suma total de los saldos acreedores.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let nCuenta, nombre, saldo, suma;
+        suma = 0;
+        do {
+
+            nCuenta = parseInt(prompt('Por favor digite numero de cuenta: '));
+            nombre = prompt('Ingrese nombre Cliente:');
+            saldo = parseInt(prompt('Ingrese saldo de la cuenta: '));
+            if (nCuenta != 0) {
+                suma = suma + saldo;
+            }
+            if(nCuenta == 0){
+                break;
+            }
+
+            document.write('<br>');
+            document.write('Cuenta numero: ' + nCuenta);
+            document.write('<br>');
+            document.write('Nombre del cliente: ' + nombre);
+            document.write('<br>');
+            if (saldo > 0) {
+                document.write('Su Estado de cuenta es: Acreedora');
+            } else if (saldo < 0) {
+                document.write('Su Estado de cuenta es: Deudora');
+            } else if (saldo == 0) {
+                document.write('Su Estado de cuenta es: Nula');
+            } else {
+                document.write('Su Estado de cuenta es: Desconocida');
+            }
+            document.write('<br>');
+            document.write('Saldo de su cuenta: ' + saldo);
+            document.write('<br>');
+            document.write('<br>');
+        } while (nCuenta != 0000);
+
+        document.write('Suma total de los saldos acreedores: '+suma);
+
+    </script>
+
+</body>
+
+</html>
+
+<!--
+    Solucion de la pagina web:
+
+    <script>
+        let nrocuenta;
+        let nombre;
+        let saldo = 0;
+        let saldoacre = 0;
+        do {
+            nrocuenta = parseInt(prompt('Ingrese nro de cuenta:'));
+            if (nrocuenta >= 0) {
+                nombre = prompt('Nombre del cliente:');
+                saldo = parseFloat(prompt('Saldo actual:'));
+                if (saldo > 0) {
+                    saldoacre = saldoacre + saldo;
+                    document.write(nombre + ' tiene saldo acreedor<br>');
+                } else {
+                    if (saldo < 0) {
+                        document.write(nombre + ' tiene saldo deudor<br>');
+                    } else {
+                        document.write(nombre + ' tiene saldo nulo<br>');
+                    }
+                }
+
+            }
+        } while (nrocuenta > 0);
+        document.write('Suma total de saldos acreedores:' + saldoacre);
+    </script>
+
+-->

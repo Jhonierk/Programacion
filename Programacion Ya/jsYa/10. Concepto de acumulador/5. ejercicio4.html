@@ -1,0 +1,39 @@
+<!--
+Realizar un programa que imprima 20 términos de la serie 5 - 10 - 15 - 20, etc. (No se ingresan valores por teclado)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x;
+        x = 5;
+        while( x <= 100){
+            document.write(x);
+            document.write('<br>');
+            x += 5;
+        }
+    </script>
+    
+</body>
+</html>
+
+<!--
+    solucion de la pagina:
+
+    <script>
+        let serie = 5;
+        let x = 0;
+        while (x < 20) {
+            document.write(serie + ' ');
+            x = x + 1;
+            serie = serie + 5;
+        }
+    </script>
+-->

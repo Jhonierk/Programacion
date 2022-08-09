@@ -1,0 +1,38 @@
+<!--
+    Desarrollar un programa que muestre la tabla de multiplicar del 5 (del 5 al 50).
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num, multi;
+        multi=0;
+        num = parseInt(prompt('Ingrese numero para su tabla de multiplicar: '));
+        for(let x=1; x <= 10; x++){
+        
+            if(num > 0){
+                multi = num * x;
+            }
+            document.write(+num+' x '+x+' = '+multi+'<br>');
+        }
+    </script>
+</body>
+</html>
+
+<!--
+    
+    <script>
+        //Desarrollar un programa que muestre la tabla de multiplicar del 5 (del 5 al 50)
+        let tabla = 5;
+        for (let f = 1; f <= 10; f++) {
+            document.write(tabla + '-');
+            tabla = tabla + 5;
+        }
+    </script>
+-->

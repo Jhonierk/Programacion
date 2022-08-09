@@ -1,0 +1,54 @@
+<!--
+Son comunes los casos donde una función, luego de hacer un proceso, retorne un valor.
+
+Ejemplo 1: Confeccionar una función que reciba un valor entero comprendido entre 1 y 5. Luego retornar en castellano el valor recibido.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        function convertirCastellano(x) {
+            if (x == 1) {
+                return "uno";
+            } else {
+                if (x == 2) {
+                    return "dos";
+                } else {
+                    if (x == 3) {
+                        return "tres";
+                    } else {
+                        if (x == 4) {
+                            return "cuatro";
+                        } else {
+                            if (x == 5) {
+                                return "cinco";
+                            } else {
+                                return "valor incorrecto";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        let valor = parseInt(prompt("Ingrese un valor entre 1 y 5"));
+        let r = convertirCastellano(valor);
+        document.write(r);
+    </script>
+
+</body>
+
+</html>\
+
+<!--
+    Podemos ver que el valor retornado por una función lo indicamos por medio de la palabra clave return. Cuando se llama a la función, debemos asignar el nombre de la función a una variable, ya que la misma retorna un valor.
+
+Una función puede tener varios parámetros, pero sólo puede retornar un único valor.
+-->

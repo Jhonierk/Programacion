@@ -1,0 +1,38 @@
+<!--
+Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 -16 -24, etc
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x;
+        x = 8;
+        while( x <= 500){
+            document.write(x);
+            document.write('<br>');
+            x += 8;
+        }
+    </script>
+    
+</body>
+</html>
+
+<!--
+    Solucion en la pagina:
+
+    <script>
+        let multiplo8;
+        multiplo8 = 8;
+        while (multiplo8 <= 500) {
+            document.write(multiplo8);
+            document.write('<br>');
+            multiplo8 = multiplo8 + 8;
+        }
+-->

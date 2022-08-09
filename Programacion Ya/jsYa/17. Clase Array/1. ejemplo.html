@@ -1,0 +1,63 @@
+<!--
+Un vector es una estructura de datos que permite almacenar un CONJUNTO de datos.
+Con un único nombre se define un vector y por medio de un subíndice hacemos referencia a cada elemento del mismo (componente).
+
+Ejemplo 1: Crear un vector para almacenar los cinco sueldos de operarios y luego mostrar el total de gastos en sueldos (cada actividad en una función)
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        function cargar(sueldos) {
+            for (let f = 0; f < sueldos.length; f++) {
+                let v = prompt('Ingrese sueldo:');
+                sueldos[f] = parseInt(v);
+            }
+        }
+
+        function calcularGastos(sueldos) {
+            let total = 0;
+            for (let f = 0; f < sueldos.length; f++) {
+                total = total + sueldos[f];
+            }
+            document.write('Listado de sueldos<br>');
+            for (let f = 0; f < sueldos.length; f++) {
+                document.write(sueldos[f] + '<br>');
+            }
+            document.write('Total de gastos en sueldos:' + total);
+        }
+
+        let sueldos;
+        sueldos = new Array(5);
+        cargar(sueldos);
+        calcularGastos(sueldos);
+    </script>
+
+</body>
+
+</html>
+<!--
+Recordemos que el programa comienza a ejecutarse a partir de las líneas que se encuentran fuera de la funciones:
+
+        let sueldos;
+        sueldos = new Array(5);
+        cargar(sueldos);
+        calcularGastos(sueldos);
+Lo primero, definimos una variable y posteriormente creamos un objeto de la clase Array, indicándole que queremos almacenar 5 valores.
+
+Llamamos a la función cargar enviándole el vector. En la función, a través de un ciclo for recorremos las distintas componentes del vector y almacenamos valores enteros que ingresamos por teclado.
+
+Para conocer el tamaño del vector accedemos a la propiedad length de la clase Array.
+
+Cuando en la función 'cargar' ingresamos los elementos del arreglo, sucede que se modifica la variable 'sueldos' definida en la parte inferior.
+
+En la segunda función sumamos todas las componentes del vector, imprimimos en la página los valores y el total de gastos.
+-->

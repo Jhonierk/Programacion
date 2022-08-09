@@ -1,0 +1,36 @@
+<!--
+Desarrollar una función que retorne la cantidad de dígitos que tiene una variable entera positiva de hasta 5 dígitos.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cantD (digito){
+            if(digito > 0){
+                if(digito <10){
+                    return 1;
+                }else if(digito < 100){
+                    return 2;
+                }else if(digito < 1000){
+                    return 3;
+                }else if(digito < 10000){
+                    return 4;
+                }else if(digito < 100000){
+                    return 5;
+                }else{
+                    return error;
+                }
+            }
+        }
+        let num = parseInt(prompt('Por favor digita un numero entre 1 y 5: '));
+        let x = cantD(num);
+        document.write('El numero '+num+' que ingresaste tiene: '+x+' digitos');
+    </script>
+</body>
+</html>
