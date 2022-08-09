@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Realizar un programa que permita cargar dos listas de 3 valores cada una. Informar 
+        con un mensaje cual de las dos listas tiene un valor acumulado mayor (mensajes 'Lista 1 mayor', 'Lista 2 mayor', 'Listas iguales')
+Tener en cuenta que puede haber dos o más estructuras repetitivas en un algoritmo. -->
+    <script>
+        let numero = 0;
+        let total1 = 0;
+        let x = 0;
+
+        while (x < 3){
+            x+=1;
+            numero = parseInt(prompt("Por favor digitar numero en la lista 1 Posicion: "+x+" de 3"));
+            total1+=numero;
+        }
+
+        let total2 = 0;
+        x=0;
+
+        while (x < 3){
+            x+=1;
+            numero = parseInt(prompt("Por favor digitar numero en la lista 2 Posicion: "+x+" de 3"));
+            total2+=numero;
+        }
+        
+        if(total1 > total2){
+            document.write("La lista 1 Es mayor que la lista 2"+ "<br>");
+            document.write("Info lista 1: " +total1+ "<br>");
+            document.write("Info lista 2: "+ total2+ "<br>");
+        }
+        else if(total2 > total1){
+            document.write("La lista 2 Es mayor que la lista 1"+ "<br>");
+            document.write("Info lista 1: " +total1+ "<br>");
+            document.write("Info lista 2: "+ total2+ "<br>");
+        }
+        else{
+            document.write("Hubo un error en la app");
+        }
+    </script>
+</body>
+</html>

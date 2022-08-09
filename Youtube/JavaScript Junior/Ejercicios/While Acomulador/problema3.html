@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <script>
+        let nEmpleados = 0;
+        let sueldos = 0;
+        let cant1 = 0;
+        let cant2 = 0;
+        let total = 0;
+        while( nEmpleados < 5 ){
+            nEmpleados+=1;
+            sueldos = parseInt(prompt("Por favor ingresar el sueldo del empleado n"+nEmpleados+ ": "));
+            
+            if(sueldos <= 300){
+                cant1+=1;
+            }
+            else if(sueldos > 300){
+                cant2+=1;
+            }
+            else{
+                prompt("Hubo un error");
+            }
+            
+            total = total + sueldos;
+        }
+        document.write("Empleados que ganan 300 o menos: "+ cant1 +"<br>");
+        document.write("Empleados que cobran mas de 300: "+cant2+"<br>");
+        document.write("Gastos total de la empresa: "+total);
+    </script>
+    
+</body>
+</html>
