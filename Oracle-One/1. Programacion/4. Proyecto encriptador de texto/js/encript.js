@@ -3,6 +3,7 @@
 function encriptar() {
   let texto = document.querySelector("#input-texto").value;
   let textoCifrado = texto
+  
     .replace(/e/gi, "enter")
     .replace(/i/gi, "imes")
     .replace(/a/gi, "ai")

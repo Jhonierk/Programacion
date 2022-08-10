@@ -47,7 +47,7 @@ h1, h2{
 
 .Contenedor_encriptador{
     width: 50%;
-    margin-top: 5%;
+    margin-top: 1%;
     margin-left: 30%;
 }
 
@@ -58,11 +58,11 @@ h1, h2{
     background: none;
     outline: 0;
     width: 80%;
-    height: 30vh;
+    height: 35vh;
     font-family: sans-serif;
     font-weight: 400;
     color: #45d3d8;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .text-input::placeholder{
@@ -82,6 +82,7 @@ h1, h2{
     cursor: pointer;
     transition: .3s;
     border: none;
+    margin-left: 50px;
 }
 
 #btn-encriptar:hover{
@@ -101,6 +102,7 @@ h1, h2{
     cursor: pointer;
     transition: .3s;
     border: none;
+    margin-left: 50px;
 }
 
 #btn-desencriptar:hover{
@@ -115,6 +117,7 @@ h1, h2{
     height: 80%;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
     
 }
 
@@ -135,12 +138,13 @@ h1, h2{
 #msg{
     border-radius: 20px;
     border: 2px solid #2ac2dd;
-    width: 90%;
-    height: 80%;
+    width: 100%;
+    height: 60%;
     font-family: sans-serif;
     color: #45d3d8;
-    font-size: 35px;
-
+    font-size: 15px;
+    
+    
 }
 
 #btn-copy{
@@ -158,8 +162,8 @@ h1, h2{
 }
 
 .img-detective{
-    width: 50%;
-    margin-left: 60px;
+    width: 40%;
+    margin-left: 80px;
 }
 
 
