@@ -5,10 +5,12 @@ const texto = document.querySelector("#input-texto");
 //funcion flecha para sobre escribir sobre los elementos y mostrar el resultado del texto de encriptado
 const hideImg = (item) => {
   ask.innerHTML = `
+
   <textarea class="text-input-salida" id="msg">${item}</textarea>
   <input onclick="copiarTexto();" class="btn" type="button" value="copiar" id="btn-copy">
-  `;
-};
+
+  `
+}
 
 //Funcion para encriptar el texto ingresado
 function encriptar(){
