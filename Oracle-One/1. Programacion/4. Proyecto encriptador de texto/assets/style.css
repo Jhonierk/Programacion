@@ -11,15 +11,14 @@ body{
     background-image: fixed;
     background-image: center;  
     margin: 50px;
+    padding: 0 150px;
 }
 
 .container{
     background-color: rgba(255, 255, 255, 0.877);
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 30px;
     border-radius: 2%;
+    
 }
 
 .main{
@@ -49,6 +48,7 @@ h1, h2{
     width: 50%;
     margin-top: 1%;
     margin-left: 30%;
+    
 }
 
 .text-input{
@@ -63,6 +63,7 @@ h1, h2{
     font-weight: 400;
     color: #45d3d8;
     font-size: 15px;
+   
 }
 
 .text-input::placeholder{
@@ -134,15 +135,22 @@ h1, h2{
     justify-content: center;
    
 }
+.box-encriptor h2{
+    margin: 3rem 0;
+}
+
+.parrafo{
+    font-size: 1.5rem;
+}
 
 #msg{
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px solid #2ac2dd;
     width: 100%;
-    height: 60%;
+    height: 80%;
     font-family: sans-serif;
     color: #45d3d8;
-    font-size: 15px;
+    font-size: 20px;
     
     
 }
@@ -161,9 +169,5 @@ h1, h2{
     border: none;
 }
 
-.img-detective{
-    width: 40%;
-    margin-left: 80px;
-}
 
 
