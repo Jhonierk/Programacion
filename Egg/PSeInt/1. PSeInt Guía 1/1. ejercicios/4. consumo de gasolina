@@ -1,0 +1,19 @@
+//Escribir un programa que calcule cuántos litros de combustible consumió un automóvil. El
+//usuario ingresará una cantidad de litros de combustible cargados en la estación y una
+//cantidad de kilómetros recorridos, después, el programa calculará el consumo (km/lt) y se lo
+//mostrará al usuario.
+
+Algoritmo ejercicio4
+	
+	definir litrosConsumidos,litrosCargados,kilometrosRecorridos Como real
+	
+	Escribir "por favor digite litros de combustible cargado: "
+	leer litrosCargados
+	escribir "por favor digite cantidad recorrida en kilometos: "
+	leer kilometrosRecorridos
+	
+	litrosConsumidos =  litrosCargados / kilometrosRecorridos
+	
+	escribir " Le quedan un total de: ",litrosConsumidos, " de gasolina"
+	
+FinAlgoritmo
