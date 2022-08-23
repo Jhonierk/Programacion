@@ -1,0 +1,17 @@
+//Calcular el cambio de monedas en dólares y euros al ingresar cierta cantidad de dinero en
+//pesos.
+
+Algoritmo conversor 
+	
+	definir pesos, euros, dolares Como real
+	
+	escribir "Por favor ingrese cantidad en pesos: "
+	leer pesos
+	
+	dolares = pesos / 300 
+	euros = pesos / 135
+	
+	Escribir "Ingresas te: ",pesos, "  pesos colombianos que equivalen a: ",dolares, " Dolares y ",euros " Euros"
+	
+	
+FinAlgoritmo
