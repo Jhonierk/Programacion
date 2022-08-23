@@ -1,0 +1,18 @@
+//Mostrar el área y perímetro de un hexágono.
+
+Algoritmo sin_titulo
+	
+	definir lado, area, apotema, perimetro como real
+	
+	escribir "Por favor digite el lado del hexagono: "
+	leer lado
+	
+	perimetro = lado * 6
+	apotema = rc((lado*lado) - ((lado/2) * (lado/2)))
+	area = (perimetro*apotema) / 2
+	
+	
+	escribir "El perimetro del hexagono es: ',perimetro
+	escribir "El area del hexagono es: ",area, " cm2"
+	
+FinAlgoritmo
