@@ -1,0 +1,30 @@
+//Un ciclista parte de una ciudad A a las HH horas, MM minutos y SS segundos.
+//El tiempo de viaje hasta llegar a otra ciudad B es de T segundos. Escribir 
+//un algoritmo que determine la hora de llegada a la ciudad B.
+Algoritmo ejercicio15
+	definir hh, mm, ss, tiempo, totalS, segRestantes Como Real
+	
+	escribir"Digite la hora: "
+	leer hh
+	escribir "Digite los minutos: "
+	leer mm
+	escribir "Digite los segundos: "
+	leer ss
+	escribir "Digite duracion de viaje en segundos"
+	leer tiempo
+	
+	totalS = hh * 3600 + mm * 60 + ss + tiempo
+	
+	hh = totalS / 3600
+	segRestantes = totalS % 3600
+	mm = segRestantes / 60
+	ss = segRestantes % 60
+	
+	hh <- trunc(hh)
+	mm <- trunc(mm)
+	ss <- trunc(ss)
+	
+	escribir"La hora del destino sera: ",hh,":",mm,":",ss
+	
+	
+FinAlgoritmo

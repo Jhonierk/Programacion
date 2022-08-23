@@ -1,0 +1,12 @@
+//Escribir un programa que convierta un valor dado en grados Fahrenheit a grados Celsius.
+Algoritmo ejercicio8
+	
+	definir f,c Como Real
+	
+	escribir "Por favor digirte los grados F: "
+	leer f
+	
+	c = (f-32) /1.8
+	
+	escribir "Los grados F: ',f," en grados c son: ",c
+FinAlgoritmo

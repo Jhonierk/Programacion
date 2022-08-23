@@ -1,0 +1,29 @@
+//Un vendedor recibe un sueldo base más un 10% extra por comisión de sus ventas, el
+//vendedor desea saber cuánto dinero obtendrá por concepto de comisiones por las tres
+//ventas que realiza en el mes y el total que recibirá en el mes tomando en cuenta su
+//sueldo base y comisiones.
+
+Algoritmo ejercicio9
+	
+	definir comision, sueldo,cantVenta Como Real
+	
+	escribir "Ingrese sueldo: "
+	leer sueldo
+	
+	escribir "Ingrese cantidad de ventas realizadas: "
+	leer cantVenta
+	
+	
+	
+	si cantVenta >= 3 && cantVenta < 6 Entonces
+		comision = sueldo * 0.10 + sueldo
+		escribir "Su sueldo es de: ",sueldo, " Y con la ventas de: ",cantVenta," Productos recibira una comision del 10% como sueldo final: ",comision
+	FinSi
+	si cantVenta >= 6 & cantVenta < 9 Entonces
+		comision = sueldo * 0.20 + sueldo
+		escribir "Su sueldo es de: ",sueldo, " Y con la ventas de: ",cantVenta," Productos recibira una comision del 10% como sueldo final: ",comision
+	FinSi
+	
+	
+	
+FinAlgoritmo
