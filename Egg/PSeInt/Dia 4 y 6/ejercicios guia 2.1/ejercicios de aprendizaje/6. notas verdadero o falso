@@ -1,0 +1,36 @@
+//Escriba un programa que pida 3 notas y valide si esas notas están entre 1 y 10. Si están
+//entre esos parámetros se debe poner en verdadero una variable de tipo lógico y si no
+//ponerla en falso. Al final el programa debe decir si las 3 notas son correctas usando la
+//variable de tipo lógico.
+Algoritmo ejercicio6
+	
+	Definir nota1,nota2,nota3,resultado Como real
+	definir true, false Como Logico
+	
+	true = Verdadero
+	false = Falso
+	
+	escribir"Por favor digitar nota1 entre 0 a 10:  "
+	leer nota1
+	
+	escribir"Por favor digitar nota2 entre 0 a 10: "
+	leer nota2
+	
+	escribir"Por favor digitar nota3entre 0 a 10: "
+	leer nota3
+	
+	si nota1 > 0 y nota1 <= 10 entonces
+		si nota2 > 0 y nota2 <= 10 entonces
+			si nota3 > 0 y nota3 <= 10 Entonces
+				resultado = (nota1+nota2+nota3)/3
+				escribir"Los datos son: ",true," Por lo tanto el resultado de sus notas es: ",resultado
+			FinSi
+		FinSi
+	SiNo
+		escribir"Los datos digitados son: ",false," Por lo tanto por favor digite correctamente"
+	FinSi
+	
+FinAlgoritmo
+
+//
+//

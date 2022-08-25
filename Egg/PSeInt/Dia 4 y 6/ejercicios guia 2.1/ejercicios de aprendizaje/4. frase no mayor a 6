@@ -1,0 +1,19 @@
+//Realizar un programa que pida introducir solo frases o palabras de 6 caracteres. Si el
+//usuario ingresa una frase o palabra de 6 caracteres se deberá de imprimir un mensaje por
+//pantalla que diga "CORRECTO", en caso contrario, se deberá imprimir "INCORRECTO".
+//Nota: investigar la función Longitud() de PseInt.
+
+Algoritmo ejercicio4
+	
+	definir frase Como Caracter
+	
+	escribir"Por favor escribe una palabra maximo 6 letras: "
+	leer frase
+	
+	si Longitud(frase) > 5 Entonces
+		escribir"Incorrecto, escribiste unca cantidad de: ",Longitud(frase)," letras"
+	SiNo
+		escribir"Correcto"
+	FinSi
+	
+FinAlgoritmo

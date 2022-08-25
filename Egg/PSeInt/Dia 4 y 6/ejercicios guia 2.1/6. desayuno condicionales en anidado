@@ -1,0 +1,35 @@
+//Es tu turno, diseña un condicional anidado que le pregunte al usuario si quiere tomar té o café y
+//en caso de que quiera tomar café, preguntar si solo o cortado y en caso de ser cortado, si prefiere
+//leche vegetal.
+
+Algoritmo desayuno
+	
+	definir op Como Entero
+	
+	escribir"Por favor elige la siguiente opciones: "
+	escribir" Desea tomar te presione [1], o tomar cade presione [2]"
+	leer op
+	
+	si op == 1 Entonces
+		escribir "Sirviendo te..."
+		escribir"Disfute de su te!"
+	sino 
+		si op == 2 Entonces
+			escribir"Desea cafe solo [1] o cortado [2]"
+			leer op
+		si op == 1 Entonces
+			escribir"Disfrute del cafe solo"
+		sino
+			escribir "Ha elegido cafe cortado desea leche natural [1] o vegetal [2]"
+			leer op
+				si op == 1 Entonces
+					Escribir "Sirviendo cafe cortado con leche natural...."
+				sino 
+					escribir"Sirviendo cafe cortado con leche vegetal.."
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+	
+FinAlgoritmo
