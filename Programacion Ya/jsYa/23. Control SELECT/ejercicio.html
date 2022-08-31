@@ -1,0 +1,49 @@
+<!--
+Confeccionar una página que muestre un objeto SELECT con distintos tipos de pizzas (Jamón y Queso, Muzzarella, Morrones). 
+Al seleccionar una, mostrar en un objeto de tipo TEXT el precio de la misma.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p>Seleccione la pizza que desea:</p>
+        <p><select id="select" onChange="pizzaPrecio()">
+            <option value="2000">Jamón y Queso</option>
+            <option value="2500">Muzzarella</option>
+            <option value="3500">Morrones</option>
+        </select></p>
+        <p>El precio de la pizza es de: <input type="text" id="precio"></p>
+    </form>
+
+    <script>
+        function pizzaPrecio() {
+            document.getElementById('precio').value = document.getElementById('select').value;
+        }
+    </script>
+</body>
+
+<!--
+    <form>
+        <p>Pizzas:</p>
+        <p><select id="pizza" onChange="mostrarSeleccionPizza()">
+                <option value="180">Jamon y Queso</option>
+                <option value="150">Muzzarella</option>
+                <option value="170">Morrones</option>
+            </select></p>
+        <p><input type="text" id="mensaje"></p>
+    </form>
+
+    <script>
+        function mostrarSeleccionPizza() {
+            document.getElementById('mensaje').value =
+                document.getElementById('pizza').options[document.getElementById('pizza').selectedIndex].value;
+        }
+    </script>
+-->
+</html>
