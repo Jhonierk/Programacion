@@ -8,10 +8,22 @@
  })();
  */
 
- //Ahora para exportar algunos elementos del patron modular que queremos acceder
+//Ahora para exportar algunos elementos del patron modular que queremos acceder
 const myModule = (() => {
   //El 'use strict' es un metodo que sirve para corregir errores de sintaxis
   "use strict";
+
+  //Agregart una costante global del resultado
+  const valorResult = document.getElementById("result");
+
+  //Agregando la funcionalidad de los botones desde el patron modular
+  const btnPerimetroCuadrado = document.querySelector("#btnPerimetroCuadrado"),
+    btnAreaCuadrado = document.querySelector("#btnAreaCuadrado"),
+    btnPerimetroTriangulo = document.querySelector("#btnPerimetroTriangulo"),
+    btnAreaTriangulo = document.querySelector("#btnAreaTriangulo"),
+    btnDiametroCirculo = document.querySelector("#btnDiametroCirculo"),
+    btnPerimetroCirculo = document.querySelector("#btnPerimetroCirculo"),
+    btnAreaCirculo = document.querySelector("#btnAreaCirculo");
 
   //fucnion que calcula el area y perimetro del cuadrado
 
@@ -20,8 +32,6 @@ const myModule = (() => {
   const perimSquare = (lado) => lado * 4;
   //funcion flecha para encontrar el area de un cuadrado
   const area = (lado) => lado * lado;
-  //Agregart una costante global del resultado
-  const valorResult = document.getElementById("result");
 
   //funcion para el boton perimeto
   function calcularPerimetro() {
@@ -127,8 +137,7 @@ const myModule = (() => {
 
   //Con el retunr retorna todo lo que queremos que el patron modular muestre como un objeto
   return {
-    calcularPC:calcularPerimetro,
-    calcularAC:calcularArea
-  }
-
+    calcularPC: calcularPerimetro,
+    calcularAC: calcularArea,
+  };
 })();
