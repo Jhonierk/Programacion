@@ -8,7 +8,8 @@
  })();
  */
 
-(() => {
+ //Ahora para exportar algunos elementos del patron modular que queremos acceder
+const myModule = (() => {
   //El 'use strict' es un metodo que sirve para corregir errores de sintaxis
   "use strict";
 
@@ -123,4 +124,11 @@
     const result = `El Area del circulo es: ${areaCirculo(radio)}`;
     valorResult.innerText = result;
   }
+
+  //Con el retunr retorna todo lo que queremos que el patron modular muestre como un objeto
+  return {
+    calcularPC:calcularPerimetro,
+    calcularAC:calcularArea
+  }
+
 })();
