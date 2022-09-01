@@ -33,8 +33,8 @@ const myModule = (() => {
   //funcion flecha para encontrar el area de un cuadrado
   const area = (lado) => lado * lado;
 
-  //funcion para el boton perimeto
-  function calcularPerimetro() {
+  //funcion flecha para el boton perimeto
+  btnPerimetroCuadrado.addEventListener('click', () => {
     //Con esto toma el valor ingresado en el input de la pagina
     let inputLado = document.getElementById("inputLado");
     //Con esto hace la conversion del valor a entero
@@ -44,9 +44,9 @@ const myModule = (() => {
     const result = `El perimetro del cuadrado es: ${perimSquare(valor)} cm`;
     //document.getElementById('result').innerText = result;
     valorResult.innerText = result;
-  }
+  });
 
-  function calcularArea() {
+  btnAreaCuadrado.addEventListener('click', () => {
     //Con esto toma el valor ingresado en el input de la pagina
     let inputLado = document.getElementById("inputLado");
     //Con esto hace la conversion del valor a entero
@@ -56,7 +56,7 @@ const myModule = (() => {
     const result = `El Area del cuadrado es: ${area(valor)} cm^2`;
     //document.getElementById('result').innerText = result;
     valorResult.innerText = result;
-  }
+  });
 
   //funcion del perimetro de un triangulo
   const perimTriangulo = (lado1, lado2, lado3) => lado1 + lado2 + lado3;
@@ -65,7 +65,7 @@ const myModule = (() => {
   const areaTriangulo = (base, altura) => (base * altura) / 2;
 
   //funcion para el boton perimeto para encontrar el perimetro de un triangulo
-  function calcularPerimTriangulo() {
+  btnPerimetroTriangulo.addEventListener('click', () => {
     //con esto se toma el valor ingresado en el primer input de triangulo "lado"
     let inputLado1 = document.getElementById("lado1T");
     let inputLado2 = document.getElementById("lado2T");
@@ -82,10 +82,10 @@ const myModule = (() => {
       valorL3
     )} cm`;
     valorResult.innerText = result;
-  }
+  });
 
   //funcion para el boton area para encontrar el area de un cuadrado
-  function calcularAreaTriangulo() {
+  btnAreaTriangulo.addEventListener('click', () => {
     let inputBase = document.getElementById("base");
     let inputAltura = document.getElementById("altura");
 
@@ -97,7 +97,7 @@ const myModule = (() => {
       alturaT
     )}`;
     valorResult.innerText = result;
-  }
+  });
 
   //Solucion para el circulo
 
@@ -109,35 +109,36 @@ const myModule = (() => {
   const areaCirculo = (radio) => radio * radio * Math.PI;
 
   //funcion para boton Diametro para encontrar el Diametro del circulo
-  function calcularDiametroCirculo() {
+  btnDiametroCirculo.addEventListener('click', () => {
     let inputRadio = document.getElementById("radioC");
     let radio = Number(inputRadio.value);
 
     const result = `El diametro del circulo es: ${diametroCirculo(radio)}`;
     valorResult.innerText = result;
-  }
+  });
 
   //funcion para boton Perimetro para encontrar el Perimetro del circulo
-  function calcularPerimetroCirculo() {
+  btnPerimetroCirculo.addEventListener('click', () => {
     let inputRadio = document.getElementById("radioC");
     let radio = Number(inputRadio.value);
 
     const result = `El Perimetro del circulo es: ${perimetroCirculo(radio)}`;
     valorResult.innerText = result;
-  }
+  });
 
   //funcion para boton Area para encontrar el Area del circulo
-  function calcularAreaCirculo() {
+  btnAreaCirculo.addEventListener('click', () => {
     let inputRadio = document.getElementById("radioC");
     let radio = Number(inputRadio.value);
 
     const result = `El Area del circulo es: ${areaCirculo(radio)}`;
     valorResult.innerText = result;
-  }
+  });
 
   //Con el retunr retorna todo lo que queremos que el patron modular muestre como un objeto
-  return {
+  /*return {
     calcularPC: calcularPerimetro,
     calcularAC: calcularArea,
   };
+  */
 })();
