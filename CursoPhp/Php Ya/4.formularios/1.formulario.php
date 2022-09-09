@@ -7,9 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php
 
-    <script src="6. Encapsulamiento.js"></script>
+    echo "El nombre ingresado es:";
+    echo $_REQUEST['nombre'];
+
+    ?>
 </body>
 </html>
-

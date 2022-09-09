@@ -7,9 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    
-
-    <script src="6. Encapsulamiento.js"></script>
+    <?php
+        for ($x = 1; $x <= 100; $x++){
+            echo $x;
+            echo '<br>';
+        }
+    ?>
 </body>
 </html>
-

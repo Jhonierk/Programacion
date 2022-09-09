@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Confeccionar un programa en PHP que permita hacer el pedido de pizzas via internet.
+El formulario debe ser:
+Nombre:[..............]
+Direccion:[...................]
+Jamon y queso:[x]
+Cantidad[...]
+
+Napolitana:[x]
+Cantidad[...]
+
+Muzzarella:[x]
+Cantidad[...]
+
+[Confirmar]
+
+Para el ingreso del nombre, dirección y cantidad de pizzas de cada tipo disponer objetos de la clase "text".
+
+Disponer tres objetos de tipo "checkbox" para seleccionar los tipos de pizzas.
+Por último disponer un botón para el envío de datos: "submit".
+
+Grabar en un archivo de texto llamado "pedidos.txt" cada pedido, separados por una línea de puntos entre cada pedido.-->
+
+<form method="post" action="ejercicio.php">
+    Nombre:
+    <input type="text" name="nombre" size="30">
+    <br>
+    Dirección:
+    <input type="text" name="direccion" size="40">
+    <br>
+    Jamon y Queso:
+    <input type="checkbox" name="jamonqueso">
+    <input type="text" name="cantjamonqueso" size="3">
+    <br>
+    Napolitana:
+    <input type="checkbox" name="napolitana">
+    <input type="text" name="cantnapolitana" size="3">
+    <br>
+    Muzzarella:
+    <input type="checkbox" name="muzzarella">
+    <input type="text" name="cantmuzzarella" size="3">
+    <br>
+    <input type="submit" value="Confirmar">
+  </form>
+
+
+
+</body>
+</html>

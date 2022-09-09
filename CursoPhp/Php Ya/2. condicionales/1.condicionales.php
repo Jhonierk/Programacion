@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +8,16 @@
     <title>Document</title>
 </head>
 <body>
-    
+<?php
+    $valor = rand(1, 10);
+    echo "El valor sorteado es $valor<br>";
 
-    <script src="6. Encapsulamiento.js"></script>
+    if($valor <= 5){
+        echo "Es menor o igual a 5";
+    }else{
+        echo "Es mayor a 5";
+    }
+    
+?>
 </body>
 </html>
-

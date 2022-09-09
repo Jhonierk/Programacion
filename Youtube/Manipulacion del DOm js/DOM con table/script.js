@@ -9,7 +9,7 @@ function agregarFila() {
     Swal.fire({
       icon: "error",
       title: "Lo sentimos",
-      text: "No has ingresado correctament, Por favor vuelva a intentar!",
+      text: "No has ingresado correctamente, Por favor vuelva a intentar!",
     });
   } else {
 
