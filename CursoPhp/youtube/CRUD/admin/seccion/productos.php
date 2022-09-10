@@ -30,6 +30,17 @@ switch ($accion){
         echo "Presionaste boton Cancelar";
         break;
 
+    case "Seleccionar":
+        echo "Presionaste boton seleccionar";
+        break;
+
+    case "Borrar":
+        $sentenciaSQL = $conexion->prepare("DELETE FROM libros WHERE id=:id");
+        $sentenciaSQL -> bindParam(':id',$txtID);
+        $sentenciaSQL -> execute();
+        //echo "Presionaste boton Borrar";
+        break;
+
 }
 //Seleccioname todos los libros que estan en la tabla libros
 $sentenciaSQL = $conexion->prepare("SELECT * FROM libros");
@@ -83,8 +94,6 @@ $listaLibros=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
 </div>
 
 
-
-
 <div class="col-md-7">
     <table class="table table-bordered">
         <thead>
@@ -96,13 +105,24 @@ $listaLibros=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
             </tr>
         </thead>
         <tbody>
-
+            <!--muestra la informacion de la base de datos por su id, nombre, imagen-->
             <?php foreach($listaLibros as $libro) { ?>
             <tr>
                 <td><?php echo $libro['id']; ?></td>
                 <td><?php echo $libro['nombre']; ?></td>
                 <td><?php echo $libro['imagen']; ?></td>
-                <td>seleccionar | Borrar</td>
+
+                <td>
+
+                <form method="POST">
+
+                    <input type="hidden" name="txtID" id="txtID" value="<?php echo $libro['id']; ?>" />
+                    <input type="submit" name="accion" value="Seleccionar" class="btn btn-primary" />
+                    <input type="submit" name="accion" value="Borrar" class="btn btn-danger" />
+
+                </form>
+                </td>
+
             </tr>
         <?php }?>
 
