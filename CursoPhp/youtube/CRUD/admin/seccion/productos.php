@@ -1,7 +1,7 @@
 <?php include('../template/cabecera.php') ?>
 
 <?php 
-
+//maneras para obtener los datos atraves de los inputs del formulario
 $txtID=(isset($_POST['txtID'])) ? $_POST['txtID']:"";
 $txtNombre=(isset($_POST['txtNombre'])) ? $_POST['txtNombre']:"";
 
@@ -13,11 +13,43 @@ echo $txtNombre."<br>";
 echo $txtImagen."<br>";
 echo $accion."<br>";
 
+$host="localhost";
+$bd="sitio";
+$usuario="root";
+$contra="";
+
+try {
+    //coneccion a la base de datos
+    $conexion=new PDO("mysql:host=$host;dbname=$bd",$usuario,$contra);
+
+    //Preguntar si se realizo la conexion?:
+    if($conexion){
+        echo "Conectado..... al sistema";
+    }
+    //otra forma de conectarse a la base de datos:
+    // $conexion = mysqli_connect("localhost", "root", "", "base1") or die("Problemas con la conexión");
+
+} catch (Exception $e){
+    echo $e -> getMessage();
+}
+
 switch ($accion){
 
     case "Agregar":
         echo "Presionaste boton Agregar";
+        //INSERT INTO `libros` (`id`, `nombre`, `imagen`) VALUES (NULL, 'libro de php', 'imagen.jpg'); 
+        try {
+        $sentenciaSQL = $conexion->prepare("INSERT INTO `libros` (`id`, `nombre`, `imagen`) VALUES (NULL, 'Libro php', 'imagen.jpg')");
+        $sentenciaSQL-> execute();
+        if($sentenciaSQL){
+            echo "Se realizo el cambio";
+        }else{
+             echo "Algo salio mal";
+        }
         break;
+    }catch (Exception $e){
+        echo $e -> getMessage();
+    }
 
     case "Modificar":
         echo "Presionaste boton Modificar";
