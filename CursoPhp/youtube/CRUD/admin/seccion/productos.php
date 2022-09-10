@@ -8,48 +8,19 @@ $txtNombre=(isset($_POST['txtNombre'])) ? $_POST['txtNombre']:"";
 $txtImagen=(isset($_FILES['txtImagen']['name'])) ? $_FILES['txtImagen']['name']:'';
 $accion=(isset($_POST['accion'])) ? $_POST['accion']:"";
 
-echo $txtID."<br>";
-echo $txtNombre."<br>";
-echo $txtImagen."<br>";
-echo $accion."<br>";
-
-$host="localhost";
-$bd="sitio";
-$usuario="root";
-$contra="";
-
-try {
-    //coneccion a la base de datos
-    $conexion=new PDO("mysql:host=$host;dbname=$bd",$usuario,$contra);
-
-    //Preguntar si se realizo la conexion?:
-    if($conexion){
-        echo "Conectado..... al sistema";
-    }
-    //otra forma de conectarse a la base de datos:
-    // $conexion = mysqli_connect("localhost", "root", "", "base1") or die("Problemas con la conexión");
-
-} catch (Exception $e){
-    echo $e -> getMessage();
-}
+//conexion a la base de datos desde el archivo bd.php
+include('../config/bd.php');
 
 switch ($accion){
 
     case "Agregar":
-        echo "Presionaste boton Agregar";
         //INSERT INTO `libros` (`id`, `nombre`, `imagen`) VALUES (NULL, 'libro de php', 'imagen.jpg'); 
-        try {
-        $sentenciaSQL = $conexion->prepare("INSERT INTO `libros` (`id`, `nombre`, `imagen`) VALUES (NULL, 'Libro php', 'imagen.jpg')");
-        $sentenciaSQL-> execute();
-        if($sentenciaSQL){
-            echo "Se realizo el cambio";
-        }else{
-             echo "Algo salio mal";
-        }
+        $sentenciaSQL = $conexion->prepare("INSERT INTO libros (nombre,imagen) VALUES (:nombre,:imagen);");
+        //insertar los datos desde el formulario (que el usuario digite)
+        $sentenciaSQL -> bindParam(':nombre',$txtNombre);
+        $sentenciaSQL -> bindParam(':imagen',$txtImagen);
+        $sentenciaSQL-> execute(); 
         break;
-    }catch (Exception $e){
-        echo $e -> getMessage();
-    }
 
     case "Modificar":
         echo "Presionaste boton Modificar";
@@ -60,6 +31,12 @@ switch ($accion){
         break;
 
 }
+//Seleccioname todos los libros que estan en la tabla libros
+$sentenciaSQL = $conexion->prepare("SELECT * FROM libros");
+//Ejecuta la instruccion
+$sentenciaSQL -> execute();
+//Recupera todos los registros y se almacena en la varible, (El FETCH_ASSOC genera una sociacion entre los datos )
+$listaLibros=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
 
 
 ?>
@@ -119,13 +96,16 @@ switch ($accion){
             </tr>
         </thead>
         <tbody>
+
+            <?php foreach($listaLibros as $libro) { ?>
             <tr>
-                <td>2</td>
-                <td>Aprende php</td>
-                <td>imagen.jpg </td>
+                <td><?php echo $libro['id']; ?></td>
+                <td><?php echo $libro['nombre']; ?></td>
+                <td><?php echo $libro['imagen']; ?></td>
                 <td>seleccionar | Borrar</td>
             </tr>
-            
+        <?php }?>
+
         </tbody>
     </table>
 </div>
