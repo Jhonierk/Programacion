@@ -75,11 +75,33 @@ switch ($accion){
         break;
 
     case "Borrar":
+
+        //------------------------------------------------------------------------------------
+        //para borrar la imagen guardada en la carpeta
+        $sentenciaSQL = $conexion->prepare("SELECT  imagen FROM libros WHERE id=:id");
+        $sentenciaSQL -> bindParam(':id',$txtID);
+        $sentenciaSQL -> execute();
+        $libro=$sentenciaSQL->fetch(PDO::FETCH_LAZY);
+
+        //verificar si existe la imagen:
+
+        if(isset ($libro["imagen"]) && ($libro['imagen']!="imagen.jpg")){
+
+            //verifica si el archivo existe en la ruta indicada
+            if(file_exists("../../img/".$libro["imagen"])){
+                unlink("../../img/".$libro["imagen"]);
+            }
+        }
+        //------------------------------------------------------------------------------------
+
+        //Borrar el registro desde la base de datos
+        //------------------------------------------------------------------------------------
         $sentenciaSQL = $conexion->prepare("DELETE FROM libros WHERE id=:id");
         $sentenciaSQL -> bindParam(':id',$txtID);
         $sentenciaSQL -> execute();
         //echo "Presionaste boton Borrar";
         break;
+         //------------------------------------------------------------------------------------
 
 }
 //Seleccioname todos los libros que estan en la tabla libros
