@@ -11,7 +11,7 @@
   </head>
   <body>
       
-<?php $url="http://".$_SERVER['HTTP_HOST']."/CursoPhp/youtube/CRUD"; ?>
+<?php $url="http://".$_SERVER['HTTP_HOST']."/CRUD"; ?>
 
 <nav class="navbar navbar-expand navbar-light bg-light">
     <div class="nav navbar-nav">

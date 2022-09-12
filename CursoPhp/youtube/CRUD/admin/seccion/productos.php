@@ -18,12 +18,43 @@ switch ($accion){
         $sentenciaSQL = $conexion->prepare("INSERT INTO libros (nombre,imagen) VALUES (:nombre,:imagen);");
         //insertar los datos desde el formulario (que el usuario digite)
         $sentenciaSQL -> bindParam(':nombre',$txtNombre);
-        $sentenciaSQL -> bindParam(':imagen',$txtImagen);
+
+        //Para evitar que se sobre escriba una imagen con mismo nombre:
+        $fecha = new DateTime();
+        //variable que que comprueba si la imagen esta vacia, en caso contrario guarda la imagen agregandole la fecha
+        $nombreArchivo=($txtImagen!="")?$fecha->getTimestamp()."_".$_FILES["txtImagen"]["name"]:"imagen.jpg";
+
+        //Aqui se almacena la informacion completa de la imagen
+        $tmpImagen=$_FILES["txtImagen"]["tmp_name"];
+
+        //vuelve a comprobar que no este vacia y la guarda en la siguiente ubicacion
+        if($tmpImagen!=""){
+            move_uploaded_file($tmpImagen,"../../img/".$nombreArchivo);
+        }
+
+
+        $sentenciaSQL -> bindParam(':imagen',$nombreArchivo);
         $sentenciaSQL-> execute(); 
         break;
 
     case "Modificar":
-        echo "Presionaste boton Modificar";
+
+        //Para que modifique el nombre con su respectivo id
+        $sentenciaSQL = $conexion->prepare("UPDATE libros SET nombre=:nombre WHERE id=:id");
+        $sentenciaSQL -> bindParam(':nombre',$txtNombre);
+        $sentenciaSQL -> bindParam(':id',$txtID);
+        $sentenciaSQL -> execute();
+        
+
+        //Comprobando si la casilla imagen esta vacia
+        if($txtImagen!="" or $txtNombre!=NULL){
+            //Modificar la imagen con el respectivo id
+            $sentenciaSQL = $conexion->prepare("UPDATE libros SET imagen=:imagen WHERE id=:id");
+            $sentenciaSQL -> bindParam(':imagen',$txtImagen);
+            $sentenciaSQL -> bindParam(':id',$txtID);
+            $sentenciaSQL -> execute();
+        }
+
         break;
          
     case "Cancelar":
