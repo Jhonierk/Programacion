@@ -163,7 +163,14 @@ $listaLibros=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
 
             <div class = "form-group">
             <label for="txtImagen">Imagen: </label>
-            "<?php echo $txtImagen ; ?>
+            <br>
+            <?php 
+                if($txtImagen!=""){
+            ?>
+
+                    <img class="img-thumbnail rounded" src="../../img/<?php echo $txtImagen ; ?>" width="200"  alt="">
+
+            <?php } ?>
             <input type="file" class="form-control" name="txtImagen" id="txtImagen"  placeholder="Nombre del libro">
             </div> 
 
@@ -200,7 +207,9 @@ $listaLibros=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
             <tr>
                 <td><?php echo $libro['id']; ?></td>
                 <td><?php echo $libro['nombre']; ?></td>
-                <td><?php echo $libro['imagen']; ?></td>
+                <td>
+                    <img class="img-thumbnail rounded" src="../../img/<?php echo $libro['imagen']; ?>" width="200"  alt="">
+                </td>
 
                 <td>
 
