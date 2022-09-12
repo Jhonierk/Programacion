@@ -48,9 +48,36 @@ switch ($accion){
 
         //Comprobando si la casilla imagen esta vacia
         if($txtImagen!="" or $txtNombre!=NULL){
+
+           //aqui comprueba el archivo que se va a modificar desde la ruta ubicada
+            $fecha = new DateTime();
+            $nombreArchivo=($txtImagen!="")?$fecha->getTimestamp()."_".$_FILES["txtImagen"]["name"]:"imagen.jpg";
+            $tmpImagen=$_FILES["txtImagen"]["tmp_name"];
+            move_uploaded_file($tmpImagen,"../../img/".$nombreArchivo);
+
+
+            ///luego lo borra:
+            //------------------------------------------------------------------------------------
+            //para borrar la imagen guardada en la carpeta
+            $sentenciaSQL = $conexion->prepare("SELECT  imagen FROM libros WHERE id=:id");
+            $sentenciaSQL -> bindParam(':id',$txtID);
+            $sentenciaSQL -> execute();
+            $libro=$sentenciaSQL->fetch(PDO::FETCH_LAZY);
+
+            //verificar si existe la imagen:
+
+            if(isset ($libro["imagen"]) && ($libro['imagen']!="imagen.jpg")){
+
+                //verifica si el archivo existe en la ruta indicada
+                if(file_exists("../../img/".$libro["imagen"])){
+                    unlink("../../img/".$libro["imagen"]);
+                }
+            }
+            //------------------------------------------------------------------------------------
+
             //Modificar la imagen con el respectivo id
             $sentenciaSQL = $conexion->prepare("UPDATE libros SET imagen=:imagen WHERE id=:id");
-            $sentenciaSQL -> bindParam(':imagen',$txtImagen);
+            $sentenciaSQL -> bindParam(':imagen',$nombreArchivo);
             $sentenciaSQL -> bindParam(':id',$txtID);
             $sentenciaSQL -> execute();
         }
