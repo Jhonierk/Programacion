@@ -1,56 +1,34 @@
 <?php include("template/cabecera.php"); ?>
 
+<?php 
+
+include("admin/config/bd.php");
+
+//Seleccioname todos los libros que estan en la tabla libros
+$sentenciaSQL = $conexion->prepare("SELECT * FROM libros");
+//Ejecuta la instruccion
+$sentenciaSQL -> execute();
+//Recupera todos los registros y se almacena en la varible, (El FETCH_ASSOC genera una sociacion entre los datos )
+$listaLibros=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
+
+?>
+
+<?php foreach($listaLibros as $libro){ ?>
+
 <div class="col-md-3">   
 <div class="card">
 
-    <img class="card-img-top" src="https://media.admagazine.com/photos/618a63895e45a526c6be8c8c/3:2/w_3318,h_2212,c_limit/80122.jpg" alt="">
+    <img class="card-img-top" src="./img/<?php echo $libro['imagen']; ?>" height="300" alt="">
 
     <div class="card-body">
-        <h4 class="card-title">Libro Php </h4>
+        <h4 class="card-title"><?php echo $libro['nombre']; ?> </h4>
         <a name="" id="" class="btn btn-primary" href="#" role="button">Ver libro</a>
     </div>
 
 </div>
 </div>
 
+<?php } ?>
 
-<div class="col-md-3">   
-<div class="card">
-
-    <img class="card-img-top" src="https://media.admagazine.com/photos/618a63895e45a526c6be8c8c/3:2/w_3318,h_2212,c_limit/80122.jpg" alt="">
-
-    <div class="card-body">
-        <h4 class="card-title">Libro Php </h4>
-        <a name="" id="" class="btn btn-primary" href="#" role="button">Ver libro</a>
-    </div>
-
-</div>
-</div>
-
-<div class="col-md-3">   
-<div class="card">
-
-    <img class="card-img-top" src="https://media.admagazine.com/photos/618a63895e45a526c6be8c8c/3:2/w_3318,h_2212,c_limit/80122.jpg" alt="">
-
-    <div class="card-body">
-        <h4 class="card-title">Libro Php </h4>
-        <a name="" id="" class="btn btn-primary" href="#" role="button">Ver libro</a>
-    </div>
-
-</div>
-</div>
-
-<div class="col-md-3">   
-<div class="card">
-
-    <img class="card-img-top" src="https://media.admagazine.com/photos/618a63895e45a526c6be8c8c/3:2/w_3318,h_2212,c_limit/80122.jpg" alt="">
-
-    <div class="card-body">
-        <h4 class="card-title">Libro Php </h4>
-        <a name="" id="" class="btn btn-primary" href="#" role="button">Ver libro</a>
-    </div>
-
-</div>
-</div>
 
 <?php include("template/pie.php"); ?>
