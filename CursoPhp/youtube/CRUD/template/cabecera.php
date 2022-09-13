@@ -13,7 +13,7 @@
         <ul class="nav navbar-nav">
 
             <li class="nav-item">
-                <a class="nav-link" href="#">CRUD PHP</a>
+                <a class="nav-link" href="admin/index.php">CRUD PHP</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="index.php">Inicio</a>
