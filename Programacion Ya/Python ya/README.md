@@ -21,4 +21,14 @@
 | [ejercicio6.py](./4.%20Condiciones%20compuestas%20con%20operadores%20l%C3%B3gicos/ejercicio6.py)| Aumento por antiguedad |
 | [ejercicio7.py](./4.%20Condiciones%20compuestas%20con%20operadores%20l%C3%B3gicos/ejercicio7.py)| lista de tres valores numéricos distintos se calcule e informe su rango de variación (debe mostrar el mayor y el menor de ellos) |
 ## 5. Estructura condicional While
-
+|   **Archivo**   |   **Descripcion**   |
+| -------------- | --------------------- |
+| [problema1.py](./5.%20Estructura%20repetitiva%20while/problema1.py)| números del 1 al 30. con while | 
+| [problema2.py](./5.%20Estructura%20repetitiva%20while/problema2.py)| suma de 10 valores y su promedio | 
+| [ejercicio1.py](./5.%20Estructura%20repetitiva%20while/ejercicio1.py)| ingresar 10 notas de alumnos y nos informe cuántos tienen notas mayores o iguales a 7 y cuántos menores |
+| [ejercicio2.py](./5.%20Estructura%20repetitiva%20while/ejercicio2.py)| conjunto de n alturas de personas por teclado. Mostrar la altura promedio de las personas |
+| [ejercicio3.py](./5.%20Estructura%20repetitiva%20while/ejercicio3.py)| Empleados ganando entre... |
+| [ejercicio4.py](./5.%20Estructura%20repetitiva%20while/ejercicio4.py)| mprima 25 términos de la serie 11 - 22 - 33 - 44, etc. |
+| [ejercicio5.py](./5.%20Estructura%20repetitiva%20while/ejercicio5.py)| múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 - 16 - 24 |
+| [ejercicio6.py](./5.%20Estructura%20repetitiva%20while/ejercicio6.py)| Comparar cual lista es mas grande |
+| [ejercicio7.py](./5.%20Estructura%20repetitiva%20while/ejercicio7.py)| contar cuantos pares e impares se ingresaron |
