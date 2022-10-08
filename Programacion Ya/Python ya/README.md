@@ -20,7 +20,7 @@
 | [ejercicio5.py](./4.%20Condiciones%20compuestas%20con%20operadores%20l%C3%B3gicos/ejercicio5.py)| En que cuadrante se encuentra la coordenada |
 | [ejercicio6.py](./4.%20Condiciones%20compuestas%20con%20operadores%20l%C3%B3gicos/ejercicio6.py)| Aumento por antiguedad |
 | [ejercicio7.py](./4.%20Condiciones%20compuestas%20con%20operadores%20l%C3%B3gicos/ejercicio7.py)| lista de tres valores numéricos distintos se calcule e informe su rango de variación (debe mostrar el mayor y el menor de ellos) |
-## 5. Estructura condicional While
+## 5. Estructura repetitiva While
 |   **Archivo**   |   **Descripcion**   |
 | -------------- | --------------------- |
 | [problema1.py](./5.%20Estructura%20repetitiva%20while/problema1.py)| números del 1 al 30. con while | 
@@ -32,3 +32,24 @@
 | [ejercicio5.py](./5.%20Estructura%20repetitiva%20while/ejercicio5.py)| múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 - 16 - 24 |
 | [ejercicio6.py](./5.%20Estructura%20repetitiva%20while/ejercicio6.py)| Comparar cual lista es mas grande |
 | [ejercicio7.py](./5.%20Estructura%20repetitiva%20while/ejercicio7.py)| contar cuantos pares e impares se ingresaron |
+
+## 6. Estructura repetitiva For
+
+|   **Archivo**   |   **Descripcion**   |
+| -------------- | --------------------- |
+| [for vs while.py](./6.%20Estructura%20repetitiva%20for/for%20vs%20while.py)| Diferencia entre for y while | 
+| [problema1.py](./6.%20Estructura%20repetitiva%20for/problema1.py)| numeros del 0 al 100 | 
+| [problema2.py](./6.%20Estructura%20repetitiva%20for/problema2.py)| números del 20 al 30 | 
+| [problema3.py](./6.%20Estructura%20repetitiva%20for/problema3.py)| números impares que hay entre 1 y 100. | 
+| [problema4.py](./6.%20Estructura%20repetitiva%20for/problema4.py)| 10 valores por teclado y nos muestre posteriormente la suma de los valores ingresados y su promedio. | 
+| [problema5.py](./6.%20Estructura%20repetitiva%20for/problema5.py)| 10 notas de alumnos y nos informe cuántos tienen notas mayores o iguales a 7 y cuántos menores | 
+| [problema6.py](./6.%20Estructura%20repetitiva%20for/problema6.py)| ingresar 10 numeros y verificar cuantos son multiplos de 3 y 5 | 
+| [problema7.py](./6.%20Estructura%20repetitiva%20for/problema7.py)| ingrensar x cantidad y suma los valores si son mayor o igual a 1000 |
+| [ejercicio1.py](./6.%20Estructura%20repetitiva%20for/ejercicio1.py)| ingrensar x cantiad de triangulos y calcularsu superficie, cuenta la cantidad de triangulos de superficie mayor a 12 |
+| [ejercicio2.py](./6.%20Estructura%20repetitiva%20for/ejercicio2.py)| 10 números e imprima la suma de los últimos 5 valores ingresados |
+| [ejercicio3.py](./6.%20Estructura%20repetitiva%20for/ejercicio3.py)| a tabla de multiplicar del 5 (del 5 al 50) |
+| [ejercicio4.py](./6.%20Estructura%20repetitiva%20for/ejercicio4.py)| Tabla de multiplicar |
+| [ejercicio6.py](./6.%20Estructura%20repetitiva%20for/ejercicio6.py)| Identificar si es un triangulo equilátero, isoceles, escaleno |
+| [ejercicio7.py](./6.%20Estructura%20repetitiva%20for/ejercicio7.py)| cantida de puntos contados en cada punto del plano cartesiano |
+| [ejercicio8.py](./6.%20Estructura%20repetitiva%20for/ejercicio8.py)| 10 valores, cant negativos, cant positivos, multiplos de 15 y canti pares|
+| [ejercicio9.py](./6.%20Estructura%20repetitiva%20for/ejercicio9.py)| Promedio de edades de los estudiantes de cada grado |
