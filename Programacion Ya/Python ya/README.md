@@ -53,3 +53,18 @@
 | [ejercicio7.py](./6.%20Estructura%20repetitiva%20for/ejercicio7.py)| cantida de puntos contados en cada punto del plano cartesiano |
 | [ejercicio8.py](./6.%20Estructura%20repetitiva%20for/ejercicio8.py)| 10 valores, cant negativos, cant positivos, multiplos de 15 y canti pares|
 | [ejercicio9.py](./6.%20Estructura%20repetitiva%20for/ejercicio9.py)| Promedio de edades de los estudiantes de cada grado |
+
+## 7. Procesar cadenas de caracteres
+### len(): Devuelve la cantidad de caracteres
+### upper() : devuelve una cadena de caracteres convertida todos sus caracteres a mayúsculas.
+### lower() : devuelve una cadena de caracteres convertida todos sus caracteres a minúsculas.
+### capitalize() : devuelve una cadena de caracteres convertida a mayúscula solo su primer caracter y todos los demás a minúsculas.
+|   **Archivo**   |   **Descripcion**   |
+| -------------- | --------------------- |
+| [problema1.py](./7.%20Procesar%20cadenas%20de%20caracteres/problema1.py) | Imprime la primera letra y la cantidad de caracteres ingresados |
+| [problema2.py](./7.%20Procesar%20cadenas%20de%20caracteres/problema2.py) | Valida si el nombre empieza por una vocal |
+| [problema3.py](./7.%20Procesar%20cadenas%20de%20caracteres/problema3.py) | Valida si la cadena(email) ingresado tiene 1 o mas de un @ |
+| [problema4.py](./7.%20Procesar%20cadenas%20de%20caracteres/problema4.py) | tranforma un caracter en mayuscula minuscula y letra capital |
+| [ejercicio1.py](./7.%20Procesar%20cadenas%20de%20caracteres/ejercicio1.py)| Contador de espacios en parragos con while y for |
+| [ejercicio2.py](./7.%20Procesar%20cadenas%20de%20caracteres/ejercicio2.py)| Valida y cuenta las vocales biens sea mayusculas o minusculas en for y while |
+| [ejercicio3.py](./7.%20Procesar%20cadenas%20de%20caracteres/ejercicio3.py)| Valida si la clave tiene entre 10 a 20 caracteres |
