@@ -77,3 +77,4 @@
 | [problema3.py](./8.%20Estructura%20de%20datos%20tipo%20lista/problema3.py) | Mostrar nombre de alumno y realizar promedio desde una lista |
 | [ejercicio1.py](./8.%20Estructura%20de%20datos%20tipo%20lista/ejercicio1.py) | contar cuantos son mayor a 100 en un lista |
 | [ejercicio2.py](./8.%20Estructura%20de%20datos%20tipo%20lista/ejercicio2.py) | contar cuantos son mayor o igual a 7 |
+| [ejercicio3.py](./8.%20Estructura%20de%20datos%20tipo%20lista/ejercicio3.py) | Cuenta los nombres mayor a 5 caracteres de una lista |
