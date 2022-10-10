@@ -68,3 +68,12 @@
 | [ejercicio1.py](./7.%20Procesar%20cadenas%20de%20caracteres/ejercicio1.py)| Contador de espacios en parragos con while y for |
 | [ejercicio2.py](./7.%20Procesar%20cadenas%20de%20caracteres/ejercicio2.py)| Valida y cuenta las vocales biens sea mayusculas o minusculas en for y while |
 | [ejercicio3.py](./7.%20Procesar%20cadenas%20de%20caracteres/ejercicio3.py)| Valida si la clave tiene entre 10 a 20 caracteres |
+
+## 8. Estructura de datos tipo lista
+|   **Archivo**   |   **Descripcion**   |
+| -------------- | --------------------- |
+| [problema1.py](./8.%20Estructura%20de%20datos%20tipo%20lista/problema1.py) | Sumar elementos de una lista |
+| [problema2.py](./8.%20Estructura%20de%20datos%20tipo%20lista/problema2.py) | Mostrar elemento segun su posicion de una lista |
+| [problema3.py](./8.%20Estructura%20de%20datos%20tipo%20lista/problema3.py) | Mostrar nombre de alumno y realizar promedio desde una lista |
+| [ejercicio1.py](./8.%20Estructura%20de%20datos%20tipo%20lista/ejercicio1.py) | contar cuantos son mayor a 100 en un lista |
+| [ejercicio2.py](./8.%20Estructura%20de%20datos%20tipo%20lista/ejercicio2.py) | contar cuantos son mayor o igual a 7 |
