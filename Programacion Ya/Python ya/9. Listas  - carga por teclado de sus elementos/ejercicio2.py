@@ -13,6 +13,20 @@ for x in range(cantList):
     suma+=altura
     promedio= suma/ cantList
 
+
+
 print("Informacion ingresada: "+str(lista))
 print("Suma de las alturas: "+str(suma))
 print("Promedio de la altura en: "+str(promedio))
+
+altas=0
+bajas=0
+ 
+for x in range (cantList):
+    if lista[x]>promedio:
+        altas+=1
+    if lista[x]<promedio:
+        bajas+=1
+
+print("Cantidad de personas altas al promedio: "+str(altas))
+print("Cantidad de personas bajas al promedio: "+str(bajas))
