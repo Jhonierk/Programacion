@@ -78,3 +78,13 @@
 | [ejercicio1.py](./8.%20Estructura%20de%20datos%20tipo%20lista/ejercicio1.py) | contar cuantos son mayor a 100 en un lista |
 | [ejercicio2.py](./8.%20Estructura%20de%20datos%20tipo%20lista/ejercicio2.py) | contar cuantos son mayor o igual a 7 |
 | [ejercicio3.py](./8.%20Estructura%20de%20datos%20tipo%20lista/ejercicio3.py) | Cuenta los nombres mayor a 5 caracteres de una lista |
+
+## 9. Lista - cargando por teclado sus elementos
+### append(): Agrega un elemento 
+|   **Archivo**   |   **Descripcion**   |
+| -------------- | --------------------- |
+| [problema1.py](./9.%20Listas%20%20-%20carga%20por%20teclado%20de%20sus%20elementos/problema1.py) | agregando elementos a una lista por teclado |
+| [problema2.py](./9.%20Listas%20%20-%20carga%20por%20teclado%20de%20sus%20elementos/problema2.py) | agrega informacion hasta digitar 0 y muestra la informacion ingresada |
+| [ejercicio1.py](./9.%20Listas%20%20-%20carga%20por%20teclado%20de%20sus%20elementos/ejercicio1.py) | suma de los sueldos y su promedio |
+| [ejercicio2.py](./9.%20Listas%20%20-%20carga%20por%20teclado%20de%20sus%20elementos/problema2.py) | agregar cantidad de una lista, sumar y sacar promedio de una altura y contar cuantas personas son altas y bajas al promedio |
+| [ejercicio3.py](./9.%20Listas%20%20-%20carga%20por%20teclado%20de%20sus%20elementos/ejercicio3.py) |  |
