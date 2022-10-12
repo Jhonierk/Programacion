@@ -10,14 +10,23 @@ grises = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
 #para que esto se ejecute correctamente se tienen que agregar 2 variables, en este caso agregamos una variable fantasma con "__", la primeria varialble se muestra el tipo de umbral que se trabajo
 __,umbral= cv.threshold(grises,100,255,cv.THRESH_BINARY)
 
+#Ahora encontrar los contornos de la imagen de la siguiente manera:
+#Como requisito de esta es necesario para la imagen a umbral
+contorno,jerarquia= cv.findContours(umbral,cv.RETR_LIST,cv.CHAIN_APPROX_SIMPLE)
+
+#dibujar contorno:
+cv.drawContours(image, contorno,-1, (251,60,50), 3)
+
 if image is None:
     print("Error al leer la imagen")
 else:
     #La funcion imshow sirve para mostrar la imagen donde se encuentra ubicada
     print("Se encontro la imagen")
     cv.imshow("imagen normal",image)
+    """
     cv.imshow("imagen en grises",grises)
     cv.imshow("imagen en umbral",umbral)
+    """
     #la funcion waitKey() sirve para que no se cierre la imagen inmediatamente, 0 para imagenes, 1 para videos
     cv.waitKey(0)
     #Con esta funcion se cierran todas las ventanas que se han abierto para mostrar la imagen
