@@ -14,4 +14,5 @@ abrir en cmd y o terminal, pegar y ejecutar
 crear un archivo como:
 
 |   **Archivo**   |   **Descripcion**   |   **Funciones**   |
+| -------------- | --------------------- | --------------------- |
 | [contorno.py](./1.%20contorno/contorno.py) | archivo que convierte una imagen, a grises, a umbrales, para encontrar y dibujar sus contornos | [imread](https://docs.opencv.org/3.4/d4/da8/group__imgcodecs.html#ga288b8b3da0892bd651fce07b3bbd3a56)
