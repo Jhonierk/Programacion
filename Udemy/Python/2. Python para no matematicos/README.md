@@ -15,7 +15,7 @@ abrir en cmd y o terminal, pegar y ejecutar
 print(cv2.__version__)
 ```
 
-crear un archivo como:
+### Archivos del curso
 
 |   **Archivo**   |   **Descripcion**   | 
 | -------------- | --------------------- |
