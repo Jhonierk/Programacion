@@ -11,6 +11,10 @@ abrir en cmd y o terminal, pegar y ejecutar
 
 ## Verificar su intalacion y version: :heavy_check_mark:
 
+```
+print(cv2.__version__)
+```
+
 crear un archivo como:
 
 |   **Archivo**   |   **Descripcion**   | 
