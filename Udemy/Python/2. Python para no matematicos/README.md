@@ -17,7 +17,7 @@ crear un archivo como:
 | -------------- | --------------------- |
 | [contorno.py](./1.%20contorno/contorno.py) | archivo que convierte una imagen, a grises, a umbrales, para encontrar y dibujar sus contornos | ,,| 
 
-###Funciones utilizadas:
+### Funciones utilizadas:
 
 |   **Funciones**   |   **Archivo**   | 
 | -------------- | --------------------- |
