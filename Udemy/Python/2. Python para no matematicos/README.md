@@ -19,7 +19,8 @@ print(cv2.__version__)
 
 |   **Archivo**   |   **Descripcion**   | 
 | -------------- | --------------------- |
-| [contorno.py](./1.%20contorno/contorno.py) | archivo que convierte una imagen, a grises, a umbrales, para encontrar y dibujar sus contornos | ,,| 
+| [contorno.py](./1.%20contorno/contorno.py) | archivo que convierte una imagen, a grises, a umbrales, para encontrar y dibujar sus contornos |
+| [contador.py](./2.%20contador%20de%20monedas/contador.py) | archivo encuentra los contornos de una imagen y contabiliza las cantidad de monedas que se muestra en una imagen | 
 
 ### Funciones utilizadas:
 
@@ -37,8 +38,18 @@ print(cv2.__version__)
 | -------------- | --------------------- |
 | [GaussianBlur](https://docs.opencv.org/4.x/d4/d86/group__imgproc__filter.html#gaabe8c836e97159a9193fb0b11ac52cf1) | [contador.py](./2.%20contador%20de%20monedas/contador.py) |
 | [Canny](https://docs.opencv.org/4.x/dd/d1a/group__imgproc__feature.html#ga04723e007ed888ddf11d9ba04e2232de) | [contador.py](./2.%20contador%20de%20monedas/contador.py) |
+| [np.ones](https://numpy.org/doc/stable/reference/generated/numpy.ones.html) | [contador.py](./2.%20contador%20de%20monedas/contador.py) |
+| [morphologyEx](https://docs.opencv.org/4.x/d9/d61/tutorial_py_morphological_ops.html) | [contador.py](./2.%20contador%20de%20monedas/contador.py) |
 
 
 ## Ejemplo caso de uso:
 ### [contorno.py](./1.%20contorno/contorno.py)
 <img height="180em" src="./ejemplos/ejemplo-contorno.png"/> 
+
+### [contador.py](./2.%20contador%20de%20monedas/contador.py)
+<img height="180em" src="./ejemplos/ejemplo-contador.png"/> 
+#### Resultado de print:
+<img height="180em" src="./ejemplos/resultado-print-contador.JPG"/> 
+
+
+
