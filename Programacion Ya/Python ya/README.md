@@ -87,4 +87,12 @@
 | [problema2.py](./9.%20Listas%20%20-%20carga%20por%20teclado%20de%20sus%20elementos/problema2.py) | agrega informacion hasta digitar 0 y muestra la informacion ingresada |
 | [ejercicio1.py](./9.%20Listas%20%20-%20carga%20por%20teclado%20de%20sus%20elementos/ejercicio1.py) | suma de los sueldos y su promedio |
 | [ejercicio2.py](./9.%20Listas%20%20-%20carga%20por%20teclado%20de%20sus%20elementos/problema2.py) | agregar cantidad de una lista, sumar y sacar promedio de una altura y contar cuantas personas son altas y bajas al promedio |
-| [ejercicio3.py](./9.%20Listas%20%20-%20carga%20por%20teclado%20de%20sus%20elementos/ejercicio3.py) |  |
+| [ejercicio3.py](./9.%20Listas%20%20-%20carga%20por%20teclado%20de%20sus%20elementos/ejercicio3.py) | 2 listas de empleados nocturnos y diurnos, muestra la informacion de ambas listas, sus sueldos y la suma de los sueldos |
+
+### 10. Listas: mayor y menor elemento
+|   **Archivo**   |   **Descripcion**   |
+| -------------- | --------------------- |
+| [problema1.py](./10.%20Listas%20-%20mayor%20y%20menor%20elemento/) | Encuentra el elemento mayor de una lista |
+| [problema2.py](./10.%20Listas%20-%20mayor%20y%20menor%20elemento/) | Encuentra el elemento menor de una lista |
+| [ejercicio1.py](./10.%20Listas%20-%20mayor%20y%20menor%20elemento/) | --------------------- |
+| [ejercicio2.py](./10.%20Listas%20-%20mayor%20y%20menor%20elemento/) | --------------------- |
