@@ -40,4 +40,5 @@ print(cv2.__version__)
 
 
 ## Ejemplo caso de uso:
-|[contorno.py](./1.%20contorno/contorno.py) |  <img height="180em" src="./ejemplos/ejemplo-contorno.png"/> |
+### [contorno.py](./1.%20contorno/contorno.py)
+<img height="180em" src="./ejemplos/ejemplo-contorno.png"/> 
