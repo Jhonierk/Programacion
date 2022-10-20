@@ -47,10 +47,10 @@ print(cv2.__version__)
 <img height="180em" src="./ejemplos/ejemplo-contorno.png"/> 
 
 ### [contador.py](./2.%20contador%20de%20monedas/contador.py)
-<img height="280em" src="./ejemplos/ejemplo-contador.png"/> 
+<img height="380em" src="./ejemplos/ejemplo-contador.png"/> 
 
 #### Resultado de print:
-<img height="30em" src="./ejemplos/resultado-print-contador.JPG"/> 
+<img height="60em" src="./ejemplos/resultado-print-contador.JPG"/> 
 
 
 
