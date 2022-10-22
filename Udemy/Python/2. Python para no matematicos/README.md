@@ -20,7 +20,8 @@ print(cv2.__version__)
 |   **Archivo**   |   **Descripcion**   | 
 | -------------- | --------------------- |
 | [contorno.py](./1.%20contorno/contorno.py) | archivo que convierte una imagen, a grises, a umbrales, para encontrar y dibujar sus contornos |
-| [contador.py](./2.%20contador%20de%20monedas/contador.py) | archivo encuentra los contornos de una imagen y contabiliza las cantidad de monedas que se muestra en una imagen | 
+| [contador.py](./2.%20contador%20de%20monedas/contador.py) | archivo encuentra los contornos de una imagen y contabiliza las cantidad de monedas que se muestra en una imagen |
+| [contorno.py](./1.%20contorno/contorno.py) | archivo que muestra la vista de una camara web mientras esta activa en python |
 
 ### Funciones utilizadas:
 
@@ -40,6 +41,10 @@ print(cv2.__version__)
 | [Canny](https://docs.opencv.org/4.x/dd/d1a/group__imgproc__feature.html#ga04723e007ed888ddf11d9ba04e2232de) | [contador.py](./2.%20contador%20de%20monedas/contador.py) |
 | [np.ones](https://numpy.org/doc/stable/reference/generated/numpy.ones.html) | [contador.py](./2.%20contador%20de%20monedas/contador.py) |
 | [morphologyEx](https://docs.opencv.org/4.x/d9/d61/tutorial_py_morphological_ops.html) | [contador.py](./2.%20contador%20de%20monedas/contador.py) |
+| -------------- | --------------------- |
+| [VideoCapture]() | [MostrarCamara.py](./3.%20Mostrar%20camara%20desde%20python/) |
+| [isOpened]() | [MostrarCamara.py](./3.%20Mostrar%20camara%20desde%20python/) |
+| [read]() | [MostrarCamara.py](./3.%20Mostrar%20camara%20desde%20python/) |
 
 
 ## Ejemplo caso de uso:
@@ -51,6 +56,9 @@ print(cv2.__version__)
 
 #### Resultado de print:
 <img height="60em" src="./ejemplos/resultado-print-contador.JPG"/> 
+
+### [MostrarCamara.py](./3.%20Mostrar%20camara%20desde%20python/)
+<img height="180em" src="./ejemplos/CamaraPython.JPG"/> 
 
 
 
