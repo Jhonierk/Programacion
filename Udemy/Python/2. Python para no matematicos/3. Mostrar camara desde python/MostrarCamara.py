@@ -13,6 +13,9 @@ while True:
     #muestra la visualizacion de la camara
     cv.imshow("camara on", camara)
 
+    gris = cv.cvtColor(camara, cv.COLOR_BGR2GRAY)
+    cv.imshow("camara on", gris)
+
     #Ya como es un video entonces se pone 1, y se cierra con la tecla Q
     #no se cierra ni dandole a X
     if cv.waitKey(1) == ord("q"):
