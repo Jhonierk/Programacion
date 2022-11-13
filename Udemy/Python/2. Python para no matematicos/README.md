@@ -21,7 +21,7 @@ print(cv2.__version__)
 | -------------- | --------------------- |
 | [contorno.py](./1.%20contorno/contorno.py) | archivo que convierte una imagen, a grises, a umbrales, para encontrar y dibujar sus contornos |
 | [contador.py](./2.%20contador%20de%20monedas/contador.py) | archivo encuentra los contornos de una imagen y contabiliza las cantidad de monedas que se muestra en una imagen |
-| [contorno.py](./1.%20contorno/contorno.py) | archivo que muestra la vista de una camara web mientras esta activa en python |
+| [MostrarCamara.py](./3.%20Mostrar%20camara%20desde%20python/) | archivo que muestra la vista de una camara web mientras esta activa en python |
 
 ### Funciones utilizadas:
 
@@ -58,7 +58,7 @@ print(cv2.__version__)
 <img height="60em" src="./ejemplos/resultado-print-contador.JPG"/> 
 
 ### [MostrarCamara.py](./3.%20Mostrar%20camara%20desde%20python/)
-<img height="180em" src="./ejemplos/CamaraPython.JPG"/> 
+<img height="380em" src="./ejemplos/CamaraPython.JPG"/> 
 
 
 
